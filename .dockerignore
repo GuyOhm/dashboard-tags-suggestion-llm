@@ -1,0 +1,56 @@
+# Git files
+.git
+.gitignore
+
+# Python cache
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+.pytest_cache
+
+# Virtual environments
+venv/
+env/
+.venv/
+.env/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Analysis outputs (can be regenerated)
+analysis/
+
+# Documentation
+*.md
+!README.md
+
+# Docker files
+Dockerfile*
+docker-compose*.yml
+.dockerignore
+
+# Scripts (already copied if needed)
+*.sh
+config_git_lfs.sh
+
+# Environment variables (use .env.example instead)
+.env
+
+# UV cache
+.uv/
+
+# Temporary files
+*.tmp
+*.temp
+*.log
