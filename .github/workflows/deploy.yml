@@ -1,0 +1,78 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches: [ main ]
+
+env:
+  AWS_REGION: ${{ secrets.AWS_REGION }}
+  AWS_ACCOUNT_ID: ${{ secrets.AWS_ACCOUNT_ID }}
+  REPO_NAME: dashboard-tags-suggestion    # must match Terraform ECR name
+  ECR_URL: ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Configure AWS
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Login to ECR
+        uses: aws-actions/amazon-ecr-login@v2
+
+      - name: Build (ARM64) and push
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          push: true
+          platforms: linux/arm64
+          tags: |
+            ${{ env.ECR_URL }}/${{ env.REPO_NAME }}:latest
+            ${{ env.ECR_URL }}/${{ env.REPO_NAME }}:${{ github.sha }}
+
+  deploy:
+    needs: build-and-push
+    runs-on: ubuntu-latest
+    steps:
+      - name: Configure AWS
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Get instance ID and public IP
+        id: ec2
+        run: |
+          ID=$(aws ec2 describe-instances --filters "Name=tag:Name,Values=dashboard-tags" \
+            --query "Reservations[0].Instances[0].InstanceId" --output text)
+          IP=$(aws ec2 describe-instances --instance-ids "$ID" \
+            --query "Reservations[0].Instances[0].PublicIpAddress" --output text)
+          echo "id=$ID" >> $GITHUB_OUTPUT
+          echo "ip=$IP" >> $GITHUB_OUTPUT
+
+      - name: Trigger remote redeploy via SSM
+        run: |
+          aws ssm send-command \
+            --document-name "AWS-RunShellScript" \
+            --comment "Redeploy dashboard container" \
+            --targets "Key=InstanceIds,Values=${{ steps.ec2.outputs.id }}" \
+            --parameters 'commands=[
+              "aws ecr get-login-password --region '${{ env.AWS_REGION }}' | docker login --username AWS --password-stdin '${{ env.ECR_URL }}'",
+              "docker pull '${{ env.ECR_URL }}/${{ env.REPO_NAME }}:latest'",
+              "docker stop app || true",
+              "docker rm app || true",
+              "docker run -d --name app -p 8501:8501 -e OPENAI_API_KEY='${{ secrets.OPENAI_API_KEY }}' '${{ env.ECR_URL }}/${{ env.REPO_NAME }}:latest'"
+            ]' \
+            --region ${{ env.AWS_REGION }}
+
+      - name: Health check
+        run: |
+          sleep 20
+          curl -f "http://${{ steps.ec2.outputs.ip }}:8501/_stcore/health"

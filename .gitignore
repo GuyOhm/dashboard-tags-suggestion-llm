@@ -94,3 +94,8 @@ nosetests.xml
 coverage.xml
 *.cover
 .pytest_cache/
+
+terraform/.terraform/
+terraform/terraform.tfstate
+terraform/terraform.tfstate.backup
+terraform/*.tfvars
