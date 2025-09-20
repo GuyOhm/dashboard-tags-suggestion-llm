@@ -10,17 +10,12 @@ jobs:
     environment: aws_tags_suggestion
     env:
       AWS_REGION: ${{ secrets.AWS_REGION }}
-      AWS_ACCOUNT_ID: ${{ secrets.AWS_ACCOUNT_ID }}# or ${{ vars.AWS_ACCOUNT_ID }}
+      AWS_ACCOUNT_ID: ${{ secrets.AWS_ACCOUNT_ID }}
       REPO_NAME: dashboard-tags-suggestion
       ECR_URL: ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com
 
     steps:
       - uses: actions/checkout@v4
-
-      - name: Validate required secrets
-        run: |
-          [ -n "${{ env.AWS_REGION }}" ] || (echo "Missing AWS_REGION" && exit 1)
-          [ -n "${{ env.AWS_ACCOUNT_ID }}" ] || (echo "Missing AWS_ACCOUNT_ID" && exit 1)
 
       - name: Configure AWS
         uses: aws-actions/configure-aws-credentials@v4
@@ -31,6 +26,14 @@ jobs:
 
       - name: Login to ECR
         uses: aws-actions/amazon-ecr-login@v2
+
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v3
+        with:
+          platforms: arm64
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
 
       - name: Build (ARM64) and push
         uses: docker/build-push-action@v5
