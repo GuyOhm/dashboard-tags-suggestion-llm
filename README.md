@@ -167,28 +167,6 @@ OPENAI_API_KEY=sk-...
 - **Visualizations**: Optimized Plotly rendering for interactivity
 - **API calls**: Error handling and robust response parsing
 
-## 🤝 Contributing
-
-To contribute to this project:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/new-feature`)
-3. Commit your changes (`git commit -am 'Add new feature'`)
-4. Push to the branch (`git push origin feature/new-feature`)
-5. Create a Pull Request
-
-## 📝 License
-
-This project is developed as part of Project 7 - Machine Learning Engineer.
-
-## 🆘 Support
-
-For any questions or issues:
-- Check the APIs documentation
-- Verify API key configuration
-- Ensure data is in the correct format
-- Review the analysis folder for saved results
-
 ## 📚 Technologies Used
 
 - **Frontend**: Streamlit

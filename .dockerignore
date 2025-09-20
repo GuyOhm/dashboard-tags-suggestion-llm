@@ -54,3 +54,5 @@ config_git_lfs.sh
 *.tmp
 *.temp
 *.log
+
+terraform/**
