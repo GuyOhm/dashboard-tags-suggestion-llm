@@ -73,9 +73,10 @@ jobs:
           echo "id=$ID" >> $GITHUB_OUTPUT
           echo "ip=$IP" >> $GITHUB_OUTPUT
 
-      - name: Trigger remote redeploy via SSM
+      - name: Redeploy via SSM and wait
+        id: ssm
         run: |
-          aws ssm send-command \
+          CMD_ID=$(aws ssm send-command \
             --document-name "AWS-RunShellScript" \
             --comment "Redeploy dashboard container" \
             --targets "Key=InstanceIds,Values=${{ steps.ec2.outputs.id }}" \
@@ -86,9 +87,32 @@ jobs:
               "docker rm app || true",
               "docker run -d --name app -p 8501:8501 -e OPENAI_API_KEY='${{ secrets.OPENAI_API_KEY }}' '${{ env.ECR_URL }}/${{ env.REPO_NAME }}:latest'"
             ]' \
+            --region ${{ env.AWS_REGION }} \
+            --query "Command.CommandId" --output text)
+
+          echo "cmd_id=$CMD_ID" >> $GITHUB_OUTPUT
+
+          # Wait for the command to finish
+          aws ssm wait command-executed \
+            --command-id "$CMD_ID" \
+            --instance-id "${{ steps.ec2.outputs.id }}" \
             --region ${{ env.AWS_REGION }}
 
-      - name: Health check
+          # Optional: show last lines of output (helps debugging)
+          aws ssm get-command-invocation \
+            --command-id "$CMD_ID" \
+            --instance-id "${{ steps.ec2.outputs.id }}" \
+            --region ${{ env.AWS_REGION }} \
+            --query 'StandardOutputContent' --output text || true
+
+      - name: Health check (retry)
         run: |
-          sleep 20
-          curl -f "http://${{ steps.ec2.outputs.ip }}:8501/_stcore/health"
+          IP="${{ steps.ec2.outputs.ip }}"
+          for i in {1..20}; do
+            if curl -fsS "http://$IP:8501/_stcore/health" > /dev/null; then
+              echo "Healthy"; exit 0
+            fi
+            echo "Not up yet (attempt $i). Retrying..."
+            sleep 10
+          done
+          echo "App did not become healthy in time"; exit 1
