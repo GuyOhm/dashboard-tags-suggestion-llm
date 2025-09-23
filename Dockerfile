@@ -36,6 +36,9 @@ COPY --chown=appuser:appuser src/ ./src/
 COPY --chown=appuser:appuser main.py ./
 COPY --chown=appuser:appuser .env.example ./
 
+# Copy precomputed analysis JSON (if any)
+COPY --chown=appuser:appuser analysis/*.json ./analysis/
+
 # Copy data directory if it exists
 COPY --chown=appuser:appuser data/ ./data/
 
