@@ -44,7 +44,7 @@ class ExploratoryAnalysis:
         # Body words histogram
         fig_hist.add_trace(
             go.Histogram(x=text_data['body_words'], name='Body words',
-                        marker_color=self.colors[1], opacity=0.7),
+                        marker_color='royalblue', opacity=0.9),
             row=1, col=2
         )
         
