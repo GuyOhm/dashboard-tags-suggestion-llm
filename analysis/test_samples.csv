@@ -1,0 +1,667 @@
+Id,Title,Body,Tags,Score,ViewCount,AnswerCount,CommentCount,CreationDate,TagsArray,BodyClean,TitleTokens,BodyTokens,TitleNoStop,BodyNoStop,TitleLemmaPOS,BodyLemmaPOS,TagsList,TitleAndBodyLemmaPOS
+40737878,"Xcode 8.1 ""No matching provisioning profiles found"" after updating MacOS and Xcode","<p>I'm testing my app with TestFlight but I can't upload my archives after updating to MacOS 10.12 and Xcode 8.1. </p>
+
+<p>When I archive my app, click on ""Upload to App Store..."", select my Development, I get this error.</p>
+
+<blockquote>
+  <p><strong>No matching provisioning profiles found for ""Applications/app.app""</strong> </p>
+  
+  <p>None of the valid provisioning profiles allowed the specified entitlements: application-identifier, beta-reports-active, keychain-access-groups.</p>
+</blockquote>
+
+<p><strong>What I've tried so far:</strong></p>
+
+<ol>
+<li>Reopening Xcode (Many times)</li>
+<li><kbd>⌘</kbd>+<kbd>,</kbd> > select team > remove every provisioning profile > re-download every provisioning profile (Reopening Xcode after each step)</li>
+<li>Re-downloaded and installed my certificates and provisioning profiles</li>
+<li>Removing every provisioning profile and building the app</li>
+</ol>
+",<ios><xcode><ionic-framework><xcode8><testflight>,19,14533,5,3,2016-11-22 09:18:04,"['ios', 'xcode', 'ionic-framework', 'xcode8', 'testflight']","I'm testing my app with TestFlight but I can't upload my archives after updating to MacOS 10.12 and Xcode 8.1. 
+When I archive my app, click on ""Upload to App Store..."", select my Development, I get this error.
+
+No matching provisioning profiles found for ""Applications/app.app"" 
+None of the valid provisioning profiles allowed the specified entitlements: application-identifier, beta-reports-active, keychain-access-groups.
+
+What I've tried so far:
+
+Reopening Xcode (Many times)
+⌘+, > select team > remove every provisioning profile > re-download every provisioning profile (Reopening Xcode after each step)
+Re-downloaded and installed my certificates and provisioning profiles
+Removing every provisioning profile and building the app
+
+","['Xcode', '8.1', '``', 'No', 'matching', 'provisioning', 'profiles', 'found', ""''"", 'after', 'updating', 'MacOS', 'and', 'Xcode']","['I', ""'m"", 'testing', 'my', 'app', 'with', 'TestFlight', 'but', 'I', 'ca', ""n't"", 'upload', 'my', 'archives', 'after', 'updating', 'to', 'MacOS', '10.12', 'and', 'Xcode', '8.1', '.', 'When', 'I', 'archive', 'my', 'app', ',', 'click', 'on', '``', 'Upload', 'to', 'App', 'Store', '...', ""''"", ',', 'select', 'my', 'Development', ',', 'I', 'get', 'this', 'error', '.', 'No', 'matching', 'provisioning', 'profiles', 'found', 'for', '``', 'Applications/app.app', ""''"", 'None', 'of', 'the', 'valid', 'provisioning', 'profiles', 'allowed', 'the', 'specified', 'entitlements', ':', 'application-identifier', ',', 'beta-reports-active', ',', 'keychain-access-groups', '.', 'What', 'I', ""'ve"", 'tried', 'so', 'far', ':', 'Reopening', 'Xcode', '(', 'Many', 'times', ')', '⌘+', ',', '>', 'select', 'team', '>', 'remove', 'every', 'provisioning', 'profile', '>', 're-download', 'every', 'provisioning', 'profile', '(', 'Reopening', 'Xcode', 'after', 'each', 'step', ')', 'Re-downloaded', 'and', 'installed', 'my', 'certificates', 'and', 'provisioning', 'profiles', 'Removing', 'every', 'provisioning', 'profile', 'and', 'building', 'the', 'app']","['Xcode', '8.1', '``', 'matching', 'provisioning', 'profiles', 'found', ""''"", 'updating', 'MacOS', 'Xcode']","[""'m"", 'testing', 'app', 'TestFlight', 'ca', ""n't"", 'upload', 'archives', 'updating', 'MacOS', '10.12', 'Xcode', '8.1', 'archive', 'app', 'click', '``', 'Upload', 'App', 'Store', '...', ""''"", 'select', 'Development', 'get', 'error', 'matching', 'provisioning', 'profiles', 'found', '``', 'Applications/app.app', ""''"", 'None', 'valid', 'provisioning', 'profiles', 'allowed', 'specified', 'entitlements', 'application-identifier', 'beta-reports-active', 'keychain-access-groups', ""'ve"", 'tried', 'far', 'Reopening', 'Xcode', 'Many', 'times', '⌘+', 'select', 'team', 'remove', 'every', 'provisioning', 'profile', 're-download', 'every', 'provisioning', 'profile', 'Reopening', 'Xcode', 'step', 'Re-downloaded', 'installed', 'certificates', 'provisioning', 'profiles', 'Removing', 'every', 'provisioning', 'profile', 'building', 'app']",Xcode 8.1 `` match provision profile found '' update MacOS Xcode,'m test app TestFlight ca n't upload archive update MacOS 10.12 Xcode 8.1 archive app click `` Upload App Store ... '' select Development get error match provision profile found `` Applications/app.app '' None valid provision profile allow specify entitlement application-identifier beta-reports-active keychain-access-groups 've try far Reopening Xcode Many time ⌘+ select team remove every provision profile re-download every provision profile Reopening Xcode step Re-downloaded instal certificate provision profile Removing every provision profile building app,"['ios', 'xcode', 'ionic-framework', 'xcode8', 'testflight']",Xcode 8.1 `` match provision profile found '' update MacOS Xcode 'm test app TestFlight ca n't upload archive update MacOS 10.12 Xcode 8.1 archive app click `` Upload App Store ... '' select Development get error match provision profile found `` Applications/app.app '' None valid provision profile allow specify entitlement application-identifier beta-reports-active keychain-access-groups 've try far Reopening Xcode Many time ⌘+ select team remove every provision profile re-download every provision profile Reopening Xcode step Re-downloaded instal certificate provision profile Removing every provision profile building app
+24081731,How to create UILabel programmatically using Swift?,"<p>How do I create a <code>UILabel</code> programmatically using Swift in Xcode 6?</p>
+
+<p>I have started with a new ""Single View Application"" in Xcode 6 and selected Swift for this project. I have my files <code>AppDelegate.swift</code> and <code>ViewController.swift</code> and I'm not sure what to do from here.</p>
+",<ios><swift><xcode><cocoa-touch><uilabel>,135,271140,12,1,2014-06-06 12:21:12,"['ios', 'swift', 'xcode', 'cocoa-touch', 'uilabel']","How do I create a UILabel programmatically using Swift in Xcode 6?
+I have started with a new ""Single View Application"" in Xcode 6 and selected Swift for this project. I have my files AppDelegate.swift and ViewController.swift and I'm not sure what to do from here.
+","['How', 'to', 'create', 'UILabel', 'programmatically', 'using', 'Swift', '?']","['How', 'do', 'I', 'create', 'a', 'UILabel', 'programmatically', 'using', 'Swift', 'in', 'Xcode', '6', '?', 'I', 'have', 'started', 'with', 'a', 'new', '``', 'Single', 'View', 'Application', ""''"", 'in', 'Xcode', '6', 'and', 'selected', 'Swift', 'for', 'this', 'project', '.', 'I', 'have', 'my', 'files', 'AppDelegate.swift', 'and', 'ViewController.swift', 'and', 'I', ""'m"", 'not', 'sure', 'what', 'to', 'do', 'from', 'here', '.']","['create', 'UILabel', 'programmatically', 'using', 'Swift']","['create', 'UILabel', 'programmatically', 'using', 'Swift', 'Xcode', '6', 'started', 'new', '``', 'Single', 'View', 'Application', ""''"", 'Xcode', '6', 'selected', 'Swift', 'project', 'files', 'AppDelegate.swift', 'ViewController.swift', ""'m"", 'sure']",create UILabel programmatically use Swift,create UILabel programmatically use Swift Xcode 6 start new `` Single View Application '' Xcode 6 select Swift project file AppDelegate.swift ViewController.swift 'm sure,"['ios', 'swift', 'xcode', 'cocoa-touch', 'uilabel']",create UILabel programmatically use Swift create UILabel programmatically use Swift Xcode 6 start new `` Single View Application '' Xcode 6 select Swift project file AppDelegate.swift ViewController.swift 'm sure
+7042152,How do I properly override __setattr__ and __getattribute__ on new-style classes in Python?,"<p>I want to override my Python class's <code>__getattribute__</code> and <code>__setattr__</code> methods. My use case is the usual one: I have a few special names that I want to handle, and I want the default behavior for anything else. For <code>__getattribute__</code>, it seems that I can request the default behavior simply by raising <code>AttributeError</code>. However, how can I achieve the same in <code>__setattr__</code>? Here is a trivial example, implementing a class with immutable fields ""A"", ""B"", and ""C"".</p>
+
+<pre><code>class ABCImmutable(SomeSuperclass):
+    def __getattribute__(self, name):
+        if name in (""A"", ""B"", ""C""):
+            return ""Immutable value of %s"" % name
+        else:
+            # This should trigger the default behavior for any other
+            # attribute name.
+            raise AttributeError()
+
+    def __setattr__(self, name, value):
+        if name in (""A"", ""B"", ""C""):
+            raise AttributeError(""%s is an immutable attribute."")
+        else:
+            # How do I request the default behavior?
+            ???
+</code></pre>
+
+<p>What goes in place of the question marks? With old-style classes, the answer was apparently <code>self.__dict__[name] = value</code>, but documentation indicates that this is wrong for new-style classes.</p>
+",<python><python-3.x><inheritance><python-2.x><setattr>,53,47601,3,4,2011-08-12 15:10:14,"['python', 'python-3.x', 'inheritance', 'python-2.x', 'setattr']","I want to override my Python class's __getattribute__ and __setattr__ methods. My use case is the usual one: I have a few special names that I want to handle, and I want the default behavior for anything else. For __getattribute__, it seems that I can request the default behavior simply by raising AttributeError. However, how can I achieve the same in __setattr__? Here is a trivial example, implementing a class with immutable fields ""A"", ""B"", and ""C"".
+class ABCImmutable(SomeSuperclass):
+    def __getattribute__(self, name):
+        if name in (""A"", ""B"", ""C""):
+            return ""Immutable value of %s"" % name
+        else:
+            # This should trigger the default behavior for any other
+            # attribute name.
+            raise AttributeError()
+
+    def __setattr__(self, name, value):
+        if name in (""A"", ""B"", ""C""):
+            raise AttributeError(""%s is an immutable attribute."")
+        else:
+            # How do I request the default behavior?
+            ???
+
+What goes in place of the question marks? With old-style classes, the answer was apparently self.__dict__[name] = value, but documentation indicates that this is wrong for new-style classes.
+","['How', 'do', 'I', 'properly', 'override', '__setattr__', 'and', '__getattribute__', 'on', 'new-style', 'classes', 'in', 'Python', '?']","['I', 'want', 'to', 'override', 'my', 'Python', 'class', ""'s"", '__getattribute__', 'and', '__setattr__', 'methods', '.', 'My', 'use', 'case', 'is', 'the', 'usual', 'one', ':', 'I', 'have', 'a', 'few', 'special', 'names', 'that', 'I', 'want', 'to', 'handle', ',', 'and', 'I', 'want', 'the', 'default', 'behavior', 'for', 'anything', 'else', '.', 'For', '__getattribute__', ',', 'it', 'seems', 'that', 'I', 'can', 'request', 'the', 'default', 'behavior', 'simply', 'by', 'raising', 'AttributeError', '.', 'However', ',', 'how', 'can', 'I', 'achieve', 'the', 'same', 'in', '__setattr__', '?', 'Here', 'is', 'a', 'trivial', 'example', ',', 'implementing', 'a', 'class', 'with', 'immutable', 'fields', '``', 'A', ""''"", ',', '``', 'B', ""''"", ',', 'and', '``', 'C', ""''"", '.', 'class', 'ABCImmutable', '(', 'SomeSuperclass', ')', ':', 'def', '__getattribute__', '(', 'self', ',', 'name', ')', ':', 'if', 'name', 'in', '(', '``', 'A', ""''"", ',', '``', 'B', ""''"", ',', '``', 'C', ""''"", ')', ':', 'return', '``', 'Immutable', 'value', 'of', '%', 's', ""''"", '%', 'name', 'else', ':', '#', 'This', 'should', 'trigger', 'the', 'default', 'behavior', 'for', 'any', 'other', '#', 'attribute', 'name', '.', 'raise', 'AttributeError', '(', ')', 'def', '__setattr__', '(', 'self', ',', 'name', ',', 'value', ')', ':', 'if', 'name', 'in', '(', '``', 'A', ""''"", ',', '``', 'B', ""''"", ',', '``', 'C', ""''"", ')', ':', 'raise', 'AttributeError', '(', '``', '%', 's', 'is', 'an', 'immutable', 'attribute', '.', ""''"", ')', 'else', ':', '#', 'How', 'do', 'I', 'request', 'the', 'default', 'behavior', '?', '?', '?', '?', 'What', 'goes', 'in', 'place', 'of', 'the', 'question', 'marks', '?', 'With', 'old-style', 'classes', ',', 'the', 'answer', 'was', 'apparently', 'self.__dict__', '[', 'name', ']', '=', 'value', ',', 'but', 'documentation', 'indicates', 'that', 'this', 'is', 'wrong', 'for', 'new-style', 'classes', '.']","['properly', 'override', '__setattr__', '__getattribute__', 'new-style', 'classes', 'Python']","['want', 'override', 'Python', 'class', ""'s"", '__getattribute__', '__setattr__', 'methods', 'use', 'case', 'usual', 'one', 'special', 'names', 'want', 'handle', 'want', 'default', 'behavior', 'anything', 'else', '__getattribute__', 'seems', 'request', 'default', 'behavior', 'simply', 'raising', 'AttributeError', 'However', 'achieve', '__setattr__', 'trivial', 'example', 'implementing', 'class', 'immutable', 'fields', '``', ""''"", '``', 'B', ""''"", '``', 'C', ""''"", 'class', 'ABCImmutable', 'SomeSuperclass', 'def', '__getattribute__', 'self', 'name', 'name', '``', ""''"", '``', 'B', ""''"", '``', 'C', ""''"", 'return', '``', 'Immutable', 'value', ""''"", 'name', 'else', 'trigger', 'default', 'behavior', 'attribute', 'name', 'raise', 'AttributeError', 'def', '__setattr__', 'self', 'name', 'value', 'name', '``', ""''"", '``', 'B', ""''"", '``', 'C', ""''"", 'raise', 'AttributeError', '``', 'immutable', 'attribute', ""''"", 'else', 'request', 'default', 'behavior', 'goes', 'place', 'question', 'marks', 'old-style', 'classes', 'answer', 'apparently', 'self.__dict__', 'name', 'value', 'documentation', 'indicates', 'wrong', 'new-style', 'classes']",properly override __setattr__ __getattribute__ new-style class Python,want override Python class 's __getattribute__ __setattr__ method use case usual one special name want handle want default behavior anything else __getattribute__ seem request default behavior simply raise AttributeError However achieve __setattr__ trivial example implement class immutable field `` '' `` B '' `` C '' class ABCImmutable SomeSuperclass def __getattribute__ self name name `` '' `` B '' `` C '' return `` Immutable value '' name else trigger default behavior attribute name raise AttributeError def __setattr__ self name value name `` '' `` B '' `` C '' raise AttributeError `` immutable attribute '' else request default behavior go place question mark old-style class answer apparently self.__dict__ name value documentation indicates wrong new-style class,"['python', 'python-3.x', 'inheritance', 'python-2.x', 'setattr']",properly override __setattr__ __getattribute__ new-style class Python want override Python class 's __getattribute__ __setattr__ method use case usual one special name want handle want default behavior anything else __getattribute__ seem request default behavior simply raise AttributeError However achieve __setattr__ trivial example implement class immutable field `` '' `` B '' `` C '' class ABCImmutable SomeSuperclass def __getattribute__ self name name `` '' `` B '' `` C '' return `` Immutable value '' name else trigger default behavior attribute name raise AttributeError def __setattr__ self name value name `` '' `` B '' `` C '' raise AttributeError `` immutable attribute '' else request default behavior go place question mark old-style class answer apparently self.__dict__ name value documentation indicates wrong new-style class
+18100650,Rails: How to set a background image in rails from css?,"<p>I am using rails 3.2 and i have to set a background for one of the page and i have tried many ways and nothing went right, so looking for some good help. I have tried </p>
+
+<pre><code>background: url(&lt;%= asset_path 'background.jpg' %&gt;)
+
+background: url(""public/background.jpg"");
+
+background-image:url('/assets/images/background.jpg')
+</code></pre>
+
+<p>and nothing worked. Please help me.</p>
+",<css><ruby-on-rails><ruby-on-rails-3><ruby-on-rails-3.2><background-image>,67,93020,14,3,2013-08-07 10:12:56,"['css', 'ruby-on-rails', 'ruby-on-rails-3', 'ruby-on-rails-3.2', 'background-image']","I am using rails 3.2 and i have to set a background for one of the page and i have tried many ways and nothing went right, so looking for some good help. I have tried 
+background: url(<%= asset_path 'background.jpg' %>)
+
+background: url(""public/background.jpg"");
+
+background-image:url('/assets/images/background.jpg')
+
+and nothing worked. Please help me.
+","['Rails', ':', 'How', 'to', 'set', 'a', 'background', 'image', 'in', 'rails', 'from', 'css', '?']","['I', 'am', 'using', 'rails', '3.2', 'and', 'i', 'have', 'to', 'set', 'a', 'background', 'for', 'one', 'of', 'the', 'page', 'and', 'i', 'have', 'tried', 'many', 'ways', 'and', 'nothing', 'went', 'right', ',', 'so', 'looking', 'for', 'some', 'good', 'help', '.', 'I', 'have', 'tried', 'background', ':', 'url', '(', '<', '%', '=', 'asset_path', ""'background.jpg"", ""'"", '%', '>', ')', 'background', ':', 'url', '(', '``', 'public/background.jpg', ""''"", ')', ';', 'background-image', ':', 'url', '(', ""'/assets/images/background.jpg"", ""'"", ')', 'and', 'nothing', 'worked', '.', 'Please', 'help', 'me', '.']","['Rails', 'set', 'background', 'image', 'rails', 'css']","['using', 'rails', '3.2', 'set', 'background', 'one', 'page', 'tried', 'many', 'ways', 'nothing', 'went', 'right', 'looking', 'good', 'help', 'tried', 'background', 'url', 'asset_path', ""'background.jpg"", 'background', 'url', '``', 'public/background.jpg', ""''"", 'background-image', 'url', ""'/assets/images/background.jpg"", 'nothing', 'worked', 'Please', 'help']",Rails set background image rail cs,use rail 3.2 set background one page try many way nothing go right look good help try background url asset_path 'background.jpg background url `` public/background.jpg '' background-image url '/assets/images/background.jpg nothing work Please help,"['css', 'ruby-on-rails', 'ruby-on-rails-3', 'ruby-on-rails-3.2', 'background-image']",Rails set background image rail cs use rail 3.2 set background one page try many way nothing go right look good help try background url asset_path 'background.jpg background url `` public/background.jpg '' background-image url '/assets/images/background.jpg nothing work Please help
+4344366,Multiple Combo Boxes With The Same Data Source (C#),"<hr>
+
+<p><strong>UPDATE: This is now resolved, see answer below.</strong></p>
+
+<hr>
+
+<p>On one of my forms (in a Windows Forms application) I have 3 Combo Boxes. These combo boxes need to display a list of prices (In text, with an integer back-end value).</p>
+
+<p>All of these combo boxes are using the same data source (A List&lt;> of type TSPrice, with ValueMember set to Price and DisplayMember set to Description).</p>
+
+<p>My problem is this... Everytime I choose a price option from one of the dropdowns, they ALL change to the same value... Is this something to do with them all being bound to the same data source?</p>
+
+<p>Here is how I am binding them:</p>
+
+<pre><code>var priceList = new List&lt;TSPrice&gt;
+                    {
+                        new TSPrice(0, """"),
+                        new TSPrice(0, ""Half Day""),
+                        new TSPrice(0, ""Full Day""),
+                        new TSPrice(0, ""1 + Half""),
+                        new TSPrice(0, ""2 Days""),
+                        new TSPrice(0, ""Formal Quote Required"")
+                    };
+
+objInsuredPrice.DataSource = priceList;
+objTPPrice.DataSource = priceList;
+objProvSum.DataSource = priceList;
+
+objInsuredPrice.ValueMember = ""Price"";
+objTPPrice.ValueMember = ""Price"";
+objProvSum.ValueMember = ""Price"";
+
+objInsuredPrice.DisplayMember = ""Description"";
+objTPPrice.DisplayMember = ""Description"";
+objProvSum.DisplayMember = ""Description"";
+
+objInsuredPrice.SelectedIndex = 0;
+objTPPrice.SelectedIndex = 0;
+objProvSum.SelectedIndex = 0;
+
+//objInsuredPrice.DataSource      = objTPPrice.DataSource     = objProvSum.DataSource     = priceList;
+//objInsuredPrice.ValueMember     = objTPPrice.ValueMember    = objProvSum.ValueMember    = ""Price"";
+//objInsuredPrice.DisplayMember   = objTPPrice.DisplayMember  = objProvSum.DisplayMember  = ""Description"";
+//objInsuredPrice.SelectedIndex   = objTPPrice.SelectedIndex  = objProvSum.SelectedIndex  = 0;
+</code></pre>
+
+<p>Edit: The issue was that they were all being bound to the same DataSource as confirmed by Saurabh. This is how I solved it.</p>
+
+<pre><code>var priceList = new List&lt;TSPrice&gt;
+                    {
+                        new TSPrice(0, """"),
+                        new TSPrice(1, ""Half Day""),
+                        new TSPrice(2, ""Full Day""),
+                        new TSPrice(3, ""1 + Half""),
+                        new TSPrice(4, ""2 Days""),
+                        new TSPrice(5, ""Formal Quote Required"")
+                    };
+
+var insuredList = new TSPrice[5];
+var TPList = new TSPrice[5];
+var provList = new TSPrice[5];
+
+priceList.CopyTo(insuredList);
+priceList.CopyTo(TPList);
+priceList.CopyTo(provList);
+
+objInsuredPrice.DataSource = insuredList;
+objTPPrice.DataSource = TPList;
+objProvSum.DataSource = provList;
+
+objInsuredPrice.ValueMember     = objTPPrice.ValueMember    = objProvSum.ValueMember    = ""Price"";
+objInsuredPrice.DisplayMember   = objTPPrice.DisplayMember  = objProvSum.DisplayMember  = ""Description"";
+objInsuredPrice.SelectedIndex   = objTPPrice.SelectedIndex  = objProvSum.SelectedIndex  = 0;
+</code></pre>
+",<c#><winforms><combobox><datasource><best-in-place>,39,43201,6,3,2010-12-03 09:57:57,"['c#', 'winforms', 'combobox', 'datasource', 'best-in-place']","
+UPDATE: This is now resolved, see answer below.
+
+On one of my forms (in a Windows Forms application) I have 3 Combo Boxes. These combo boxes need to display a list of prices (In text, with an integer back-end value).
+All of these combo boxes are using the same data source (A List<> of type TSPrice, with ValueMember set to Price and DisplayMember set to Description).
+My problem is this... Everytime I choose a price option from one of the dropdowns, they ALL change to the same value... Is this something to do with them all being bound to the same data source?
+Here is how I am binding them:
+var priceList = new List<TSPrice>
+                    {
+                        new TSPrice(0, """"),
+                        new TSPrice(0, ""Half Day""),
+                        new TSPrice(0, ""Full Day""),
+                        new TSPrice(0, ""1 + Half""),
+                        new TSPrice(0, ""2 Days""),
+                        new TSPrice(0, ""Formal Quote Required"")
+                    };
+
+objInsuredPrice.DataSource = priceList;
+objTPPrice.DataSource = priceList;
+objProvSum.DataSource = priceList;
+
+objInsuredPrice.ValueMember = ""Price"";
+objTPPrice.ValueMember = ""Price"";
+objProvSum.ValueMember = ""Price"";
+
+objInsuredPrice.DisplayMember = ""Description"";
+objTPPrice.DisplayMember = ""Description"";
+objProvSum.DisplayMember = ""Description"";
+
+objInsuredPrice.SelectedIndex = 0;
+objTPPrice.SelectedIndex = 0;
+objProvSum.SelectedIndex = 0;
+
+//objInsuredPrice.DataSource      = objTPPrice.DataSource     = objProvSum.DataSource     = priceList;
+//objInsuredPrice.ValueMember     = objTPPrice.ValueMember    = objProvSum.ValueMember    = ""Price"";
+//objInsuredPrice.DisplayMember   = objTPPrice.DisplayMember  = objProvSum.DisplayMember  = ""Description"";
+//objInsuredPrice.SelectedIndex   = objTPPrice.SelectedIndex  = objProvSum.SelectedIndex  = 0;
+
+Edit: The issue was that they were all being bound to the same DataSource as confirmed by Saurabh. This is how I solved it.
+var priceList = new List<TSPrice>
+                    {
+                        new TSPrice(0, """"),
+                        new TSPrice(1, ""Half Day""),
+                        new TSPrice(2, ""Full Day""),
+                        new TSPrice(3, ""1 + Half""),
+                        new TSPrice(4, ""2 Days""),
+                        new TSPrice(5, ""Formal Quote Required"")
+                    };
+
+var insuredList = new TSPrice[5];
+var TPList = new TSPrice[5];
+var provList = new TSPrice[5];
+
+priceList.CopyTo(insuredList);
+priceList.CopyTo(TPList);
+priceList.CopyTo(provList);
+
+objInsuredPrice.DataSource = insuredList;
+objTPPrice.DataSource = TPList;
+objProvSum.DataSource = provList;
+
+objInsuredPrice.ValueMember     = objTPPrice.ValueMember    = objProvSum.ValueMember    = ""Price"";
+objInsuredPrice.DisplayMember   = objTPPrice.DisplayMember  = objProvSum.DisplayMember  = ""Description"";
+objInsuredPrice.SelectedIndex   = objTPPrice.SelectedIndex  = objProvSum.SelectedIndex  = 0;
+
+","['Multiple', 'Combo', 'Boxes', 'With', 'The', 'Same', 'Data', 'Source', '(', 'C', '#', ')']","['UPDATE', ':', 'This', 'is', 'now', 'resolved', ',', 'see', 'answer', 'below', '.', 'On', 'one', 'of', 'my', 'forms', '(', 'in', 'a', 'Windows', 'Forms', 'application', ')', 'I', 'have', '3', 'Combo', 'Boxes', '.', 'These', 'combo', 'boxes', 'need', 'to', 'display', 'a', 'list', 'of', 'prices', '(', 'In', 'text', ',', 'with', 'an', 'integer', 'back-end', 'value', ')', '.', 'All', 'of', 'these', 'combo', 'boxes', 'are', 'using', 'the', 'same', 'data', 'source', '(', 'A', 'List', '<', '>', 'of', 'type', 'TSPrice', ',', 'with', 'ValueMember', 'set', 'to', 'Price', 'and', 'DisplayMember', 'set', 'to', 'Description', ')', '.', 'My', 'problem', 'is', 'this', '...', 'Everytime', 'I', 'choose', 'a', 'price', 'option', 'from', 'one', 'of', 'the', 'dropdowns', ',', 'they', 'ALL', 'change', 'to', 'the', 'same', 'value', '...', 'Is', 'this', 'something', 'to', 'do', 'with', 'them', 'all', 'being', 'bound', 'to', 'the', 'same', 'data', 'source', '?', 'Here', 'is', 'how', 'I', 'am', 'binding', 'them', ':', 'var', 'priceList', '=', 'new', 'List', '<', 'TSPrice', '>', '{', 'new', 'TSPrice', '(', '0', ',', '``', ""''"", ')', ',', 'new', 'TSPrice', '(', '0', ',', '``', 'Half', 'Day', ""''"", ')', ',', 'new', 'TSPrice', '(', '0', ',', '``', 'Full', 'Day', ""''"", ')', ',', 'new', 'TSPrice', '(', '0', ',', '``', '1', '+', 'Half', ""''"", ')', ',', 'new', 'TSPrice', '(', '0', ',', '``', '2', 'Days', ""''"", ')', ',', 'new', 'TSPrice', '(', '0', ',', '``', 'Formal', 'Quote', 'Required', ""''"", ')', '}', ';', 'objInsuredPrice.DataSource', '=', 'priceList', ';', 'objTPPrice.DataSource', '=', 'priceList', ';', 'objProvSum.DataSource', '=', 'priceList', ';', 'objInsuredPrice.ValueMember', '=', '``', 'Price', ""''"", ';', 'objTPPrice.ValueMember', '=', '``', 'Price', ""''"", ';', 'objProvSum.ValueMember', '=', '``', 'Price', ""''"", ';', 'objInsuredPrice.DisplayMember', '=', '``', 'Description', ""''"", ';', 'objTPPrice.DisplayMember', '=', '``', 'Description', ""''"", ';', 'objProvSum.DisplayMember', '=', '``', 'Description', ""''"", ';', 'objInsuredPrice.SelectedIndex', '=', '0', ';', 'objTPPrice.SelectedIndex', '=', '0', ';', 'objProvSum.SelectedIndex', '=', '0', ';', '//objInsuredPrice.DataSource', '=', 'objTPPrice.DataSource', '=', 'objProvSum.DataSource', '=', 'priceList', ';', '//objInsuredPrice.ValueMember', '=', 'objTPPrice.ValueMember', '=', 'objProvSum.ValueMember', '=', '``', 'Price', ""''"", ';', '//objInsuredPrice.DisplayMember', '=', 'objTPPrice.DisplayMember', '=', 'objProvSum.DisplayMember', '=', '``', 'Description', ""''"", ';', '//objInsuredPrice.SelectedIndex', '=', 'objTPPrice.SelectedIndex', '=', 'objProvSum.SelectedIndex', '=', '0', ';', 'Edit', ':', 'The', 'issue', 'was', 'that', 'they', 'were', 'all', 'being', 'bound', 'to', 'the', 'same', 'DataSource', 'as', 'confirmed', 'by', 'Saurabh', '.', 'This', 'is', 'how', 'I', 'solved', 'it', '.', 'var', 'priceList', '=', 'new', 'List', '<', 'TSPrice', '>', '{', 'new', 'TSPrice', '(', '0', ',', '``', ""''"", ')', ',', 'new', 'TSPrice', '(', '1', ',', '``', 'Half', 'Day', ""''"", ')', ',', 'new', 'TSPrice', '(', '2', ',', '``', 'Full', 'Day', ""''"", ')', ',', 'new', 'TSPrice', '(', '3', ',', '``', '1', '+', 'Half', ""''"", ')', ',', 'new', 'TSPrice', '(', '4', ',', '``', '2', 'Days', ""''"", ')', ',', 'new', 'TSPrice', '(', '5', ',', '``', 'Formal', 'Quote', 'Required', ""''"", ')', '}', ';', 'var', 'insuredList', '=', 'new', 'TSPrice', '[', '5', ']', ';', 'var', 'TPList', '=', 'new', 'TSPrice', '[', '5', ']', ';', 'var', 'provList', '=', 'new', 'TSPrice', '[', '5', ']', ';', 'priceList.CopyTo', '(', 'insuredList', ')', ';', 'priceList.CopyTo', '(', 'TPList', ')', ';', 'priceList.CopyTo', '(', 'provList', ')', ';', 'objInsuredPrice.DataSource', '=', 'insuredList', ';', 'objTPPrice.DataSource', '=', 'TPList', ';', 'objProvSum.DataSource', '=', 'provList', ';', 'objInsuredPrice.ValueMember', '=', 'objTPPrice.ValueMember', '=', 'objProvSum.ValueMember', '=', '``', 'Price', ""''"", ';', 'objInsuredPrice.DisplayMember', '=', 'objTPPrice.DisplayMember', '=', 'objProvSum.DisplayMember', '=', '``', 'Description', ""''"", ';', 'objInsuredPrice.SelectedIndex', '=', 'objTPPrice.SelectedIndex', '=', 'objProvSum.SelectedIndex', '=', '0', ';']","['Multiple', 'Combo', 'Boxes', 'Data', 'Source', 'C']","['UPDATE', 'resolved', 'see', 'answer', 'one', 'forms', 'Windows', 'Forms', 'application', '3', 'Combo', 'Boxes', 'combo', 'boxes', 'need', 'display', 'list', 'prices', 'text', 'integer', 'back-end', 'value', 'combo', 'boxes', 'using', 'data', 'source', 'List', 'type', 'TSPrice', 'ValueMember', 'set', 'Price', 'DisplayMember', 'set', 'Description', 'problem', '...', 'Everytime', 'choose', 'price', 'option', 'one', 'dropdowns', 'change', 'value', '...', 'something', 'bound', 'data', 'source', 'binding', 'var', 'priceList', 'new', 'List', 'TSPrice', 'new', 'TSPrice', '0', '``', ""''"", 'new', 'TSPrice', '0', '``', 'Half', 'Day', ""''"", 'new', 'TSPrice', '0', '``', 'Full', 'Day', ""''"", 'new', 'TSPrice', '0', '``', '1', 'Half', ""''"", 'new', 'TSPrice', '0', '``', '2', 'Days', ""''"", 'new', 'TSPrice', '0', '``', 'Formal', 'Quote', 'Required', ""''"", 'objInsuredPrice.DataSource', 'priceList', 'objTPPrice.DataSource', 'priceList', 'objProvSum.DataSource', 'priceList', 'objInsuredPrice.ValueMember', '``', 'Price', ""''"", 'objTPPrice.ValueMember', '``', 'Price', ""''"", 'objProvSum.ValueMember', '``', 'Price', ""''"", 'objInsuredPrice.DisplayMember', '``', 'Description', ""''"", 'objTPPrice.DisplayMember', '``', 'Description', ""''"", 'objProvSum.DisplayMember', '``', 'Description', ""''"", 'objInsuredPrice.SelectedIndex', '0', 'objTPPrice.SelectedIndex', '0', 'objProvSum.SelectedIndex', '0', '//objInsuredPrice.DataSource', 'objTPPrice.DataSource', 'objProvSum.DataSource', 'priceList', '//objInsuredPrice.ValueMember', 'objTPPrice.ValueMember', 'objProvSum.ValueMember', '``', 'Price', ""''"", '//objInsuredPrice.DisplayMember', 'objTPPrice.DisplayMember', 'objProvSum.DisplayMember', '``', 'Description', ""''"", '//objInsuredPrice.SelectedIndex', 'objTPPrice.SelectedIndex', 'objProvSum.SelectedIndex', '0', 'Edit', 'issue', 'bound', 'DataSource', 'confirmed', 'Saurabh', 'solved', 'var', 'priceList', 'new', 'List', 'TSPrice', 'new', 'TSPrice', '0', '``', ""''"", 'new', 'TSPrice', '1', '``', 'Half', 'Day', ""''"", 'new', 'TSPrice', '2', '``', 'Full', 'Day', ""''"", 'new', 'TSPrice', '3', '``', '1', 'Half', ""''"", 'new', 'TSPrice', '4', '``', '2', 'Days', ""''"", 'new', 'TSPrice', '5', '``', 'Formal', 'Quote', 'Required', ""''"", 'var', 'insuredList', 'new', 'TSPrice', '5', 'var', 'TPList', 'new', 'TSPrice', '5', 'var', 'provList', 'new', 'TSPrice', '5', 'priceList.CopyTo', 'insuredList', 'priceList.CopyTo', 'TPList', 'priceList.CopyTo', 'provList', 'objInsuredPrice.DataSource', 'insuredList', 'objTPPrice.DataSource', 'TPList', 'objProvSum.DataSource', 'provList', 'objInsuredPrice.ValueMember', 'objTPPrice.ValueMember', 'objProvSum.ValueMember', '``', 'Price', ""''"", 'objInsuredPrice.DisplayMember', 'objTPPrice.DisplayMember', 'objProvSum.DisplayMember', '``', 'Description', ""''"", 'objInsuredPrice.SelectedIndex', 'objTPPrice.SelectedIndex', 'objProvSum.SelectedIndex', '0']",Multiple Combo Boxes Data Source C,UPDATE resolve see answer one form Windows Forms application 3 Combo Boxes combo box need display list price text integer back-end value combo box use data source List type TSPrice ValueMember set Price DisplayMember set Description problem ... Everytime choose price option one dropdowns change value ... something bound data source binding var priceList new List TSPrice new TSPrice 0 `` '' new TSPrice 0 `` Half Day '' new TSPrice 0 `` Full Day '' new TSPrice 0 `` 1 Half '' new TSPrice 0 `` 2 Days '' new TSPrice 0 `` Formal Quote Required '' objInsuredPrice.DataSource priceList objTPPrice.DataSource priceList objProvSum.DataSource priceList objInsuredPrice.ValueMember `` Price '' objTPPrice.ValueMember `` Price '' objProvSum.ValueMember `` Price '' objInsuredPrice.DisplayMember `` Description '' objTPPrice.DisplayMember `` Description '' objProvSum.DisplayMember `` Description '' objInsuredPrice.SelectedIndex 0 objTPPrice.SelectedIndex 0 objProvSum.SelectedIndex 0 //objInsuredPrice.DataSource objTPPrice.DataSource objProvSum.DataSource priceList //objInsuredPrice.ValueMember objTPPrice.ValueMember objProvSum.ValueMember `` Price '' //objInsuredPrice.DisplayMember objTPPrice.DisplayMember objProvSum.DisplayMember `` Description '' //objInsuredPrice.SelectedIndex objTPPrice.SelectedIndex objProvSum.SelectedIndex 0 Edit issue bound DataSource confirm Saurabh solve var priceList new List TSPrice new TSPrice 0 `` '' new TSPrice 1 `` Half Day '' new TSPrice 2 `` Full Day '' new TSPrice 3 `` 1 Half '' new TSPrice 4 `` 2 Days '' new TSPrice 5 `` Formal Quote Required '' var insuredList new TSPrice 5 var TPList new TSPrice 5 var provList new TSPrice 5 priceList.CopyTo insuredList priceList.CopyTo TPList priceList.CopyTo provList objInsuredPrice.DataSource insuredList objTPPrice.DataSource TPList objProvSum.DataSource provList objInsuredPrice.ValueMember objTPPrice.ValueMember objProvSum.ValueMember `` Price '' objInsuredPrice.DisplayMember objTPPrice.DisplayMember objProvSum.DisplayMember `` Description '' objInsuredPrice.SelectedIndex objTPPrice.SelectedIndex objProvSum.SelectedIndex 0,"['c#', 'winforms', 'combobox', 'datasource', 'best-in-place']",Multiple Combo Boxes Data Source C UPDATE resolve see answer one form Windows Forms application 3 Combo Boxes combo box need display list price text integer back-end value combo box use data source List type TSPrice ValueMember set Price DisplayMember set Description problem ... Everytime choose price option one dropdowns change value ... something bound data source binding var priceList new List TSPrice new TSPrice 0 `` '' new TSPrice 0 `` Half Day '' new TSPrice 0 `` Full Day '' new TSPrice 0 `` 1 Half '' new TSPrice 0 `` 2 Days '' new TSPrice 0 `` Formal Quote Required '' objInsuredPrice.DataSource priceList objTPPrice.DataSource priceList objProvSum.DataSource priceList objInsuredPrice.ValueMember `` Price '' objTPPrice.ValueMember `` Price '' objProvSum.ValueMember `` Price '' objInsuredPrice.DisplayMember `` Description '' objTPPrice.DisplayMember `` Description '' objProvSum.DisplayMember `` Description '' objInsuredPrice.SelectedIndex 0 objTPPrice.SelectedIndex 0 objProvSum.SelectedIndex 0 //objInsuredPrice.DataSource objTPPrice.DataSource objProvSum.DataSource priceList //objInsuredPrice.ValueMember objTPPrice.ValueMember objProvSum.ValueMember `` Price '' //objInsuredPrice.DisplayMember objTPPrice.DisplayMember objProvSum.DisplayMember `` Description '' //objInsuredPrice.SelectedIndex objTPPrice.SelectedIndex objProvSum.SelectedIndex 0 Edit issue bound DataSource confirm Saurabh solve var priceList new List TSPrice new TSPrice 0 `` '' new TSPrice 1 `` Half Day '' new TSPrice 2 `` Full Day '' new TSPrice 3 `` 1 Half '' new TSPrice 4 `` 2 Days '' new TSPrice 5 `` Formal Quote Required '' var insuredList new TSPrice 5 var TPList new TSPrice 5 var provList new TSPrice 5 priceList.CopyTo insuredList priceList.CopyTo TPList priceList.CopyTo provList objInsuredPrice.DataSource insuredList objTPPrice.DataSource TPList objProvSum.DataSource provList objInsuredPrice.ValueMember objTPPrice.ValueMember objProvSum.ValueMember `` Price '' objInsuredPrice.DisplayMember objTPPrice.DisplayMember objProvSum.DisplayMember `` Description '' objInsuredPrice.SelectedIndex objTPPrice.SelectedIndex objProvSum.SelectedIndex 0
+2698151,Entity Framework VS LINQ to SQL VS ADO.NET with stored procedures?,"<p>How would you rate each of them in terms of:</p>
+
+<ol>
+<li>Performance</li>
+<li>Speed of development</li>
+<li>Neat, intuitive, maintainable code</li>
+<li>Flexibility</li>
+<li>Overall</li>
+</ol>
+
+<p>I like my SQL and so have always been a die-hard fan of ADO.NET and stored procedures but I recently had a play with Linq to SQL and was blown away by how quickly I was writing out my DataAccess layer and have decided to spend some time really understanding either Linq to SQL or EF... or neither?</p>
+
+<p>I just want to check, that there isn't a great flaw in any of these technologies that would render my research time useless. E.g. performance is terrible, it's cool for simple apps but can only take you so far.</p>
+
+<p><strong>Update:</strong>
+Can you concentrate on EF VS L2S VS SPs rather than ORM VS SPs. I'm mainly interested by EF VS L2S. But am keen to have them compared against stored procs too since plain SQl is something I know a lot about.</p>
+",<sql><linq-to-sql><entity-framework><ado.net><linq-to-entities>,445,187489,5,5,2010-04-23 11:36:37,"['sql', 'linq-to-sql', 'entity-framework', 'ado.net', 'linq-to-entities']","How would you rate each of them in terms of:
+
+Performance
+Speed of development
+Neat, intuitive, maintainable code
+Flexibility
+Overall
+
+I like my SQL and so have always been a die-hard fan of ADO.NET and stored procedures but I recently had a play with Linq to SQL and was blown away by how quickly I was writing out my DataAccess layer and have decided to spend some time really understanding either Linq to SQL or EF... or neither?
+I just want to check, that there isn't a great flaw in any of these technologies that would render my research time useless. E.g. performance is terrible, it's cool for simple apps but can only take you so far.
+Update:
+Can you concentrate on EF VS L2S VS SPs rather than ORM VS SPs. I'm mainly interested by EF VS L2S. But am keen to have them compared against stored procs too since plain SQl is something I know a lot about.
+","['Entity', 'Framework', 'VS', 'LINQ', 'to', 'SQL', 'VS', 'ADO.NET', 'with', 'stored', 'procedures', '?']","['How', 'would', 'you', 'rate', 'each', 'of', 'them', 'in', 'terms', 'of', ':', 'Performance', 'Speed', 'of', 'development', 'Neat', ',', 'intuitive', ',', 'maintainable', 'code', 'Flexibility', 'Overall', 'I', 'like', 'my', 'SQL', 'and', 'so', 'have', 'always', 'been', 'a', 'die-hard', 'fan', 'of', 'ADO.NET', 'and', 'stored', 'procedures', 'but', 'I', 'recently', 'had', 'a', 'play', 'with', 'Linq', 'to', 'SQL', 'and', 'was', 'blown', 'away', 'by', 'how', 'quickly', 'I', 'was', 'writing', 'out', 'my', 'DataAccess', 'layer', 'and', 'have', 'decided', 'to', 'spend', 'some', 'time', 'really', 'understanding', 'either', 'Linq', 'to', 'SQL', 'or', 'EF', '...', 'or', 'neither', '?', 'I', 'just', 'want', 'to', 'check', ',', 'that', 'there', 'is', ""n't"", 'a', 'great', 'flaw', 'in', 'any', 'of', 'these', 'technologies', 'that', 'would', 'render', 'my', 'research', 'time', 'useless', '.', 'E.g', '.', 'performance', 'is', 'terrible', ',', 'it', ""'s"", 'cool', 'for', 'simple', 'apps', 'but', 'can', 'only', 'take', 'you', 'so', 'far', '.', 'Update', ':', 'Can', 'you', 'concentrate', 'on', 'EF', 'VS', 'L2S', 'VS', 'SPs', 'rather', 'than', 'ORM', 'VS', 'SPs', '.', 'I', ""'m"", 'mainly', 'interested', 'by', 'EF', 'VS', 'L2S', '.', 'But', 'am', 'keen', 'to', 'have', 'them', 'compared', 'against', 'stored', 'procs', 'too', 'since', 'plain', 'SQl', 'is', 'something', 'I', 'know', 'a', 'lot', 'about', '.']","['Entity', 'Framework', 'VS', 'LINQ', 'SQL', 'VS', 'ADO.NET', 'stored', 'procedures']","['would', 'rate', 'terms', 'Performance', 'Speed', 'development', 'Neat', 'intuitive', 'maintainable', 'code', 'Flexibility', 'Overall', 'like', 'SQL', 'always', 'die-hard', 'fan', 'ADO.NET', 'stored', 'procedures', 'recently', 'play', 'Linq', 'SQL', 'blown', 'away', 'quickly', 'writing', 'DataAccess', 'layer', 'decided', 'spend', 'time', 'really', 'understanding', 'either', 'Linq', 'SQL', 'EF', '...', 'neither', 'want', 'check', ""n't"", 'great', 'flaw', 'technologies', 'would', 'render', 'research', 'time', 'useless', 'E.g', 'performance', 'terrible', ""'s"", 'cool', 'simple', 'apps', 'take', 'far', 'Update', 'concentrate', 'EF', 'VS', 'L2S', 'VS', 'SPs', 'rather', 'ORM', 'VS', 'SPs', ""'m"", 'mainly', 'interested', 'EF', 'VS', 'L2S', 'keen', 'compared', 'stored', 'procs', 'since', 'plain', 'SQl', 'something', 'know', 'lot']",Entity Framework VS LINQ SQL VS ADO.NET store procedure,would rate term Performance Speed development Neat intuitive maintainable code Flexibility Overall like SQL always die-hard fan ADO.NET store procedure recently play Linq SQL blown away quickly write DataAccess layer decide spend time really understand either Linq SQL EF ... neither want check n't great flaw technology would render research time useless E.g performance terrible 's cool simple apps take far Update concentrate EF VS L2S VS SPs rather ORM VS SPs 'm mainly interested EF VS L2S keen compare store procs since plain SQl something know lot,"['sql', 'linq-to-sql', 'entity-framework', 'ado.net', 'linq-to-entities']",Entity Framework VS LINQ SQL VS ADO.NET store procedure would rate term Performance Speed development Neat intuitive maintainable code Flexibility Overall like SQL always die-hard fan ADO.NET store procedure recently play Linq SQL blown away quickly write DataAccess layer decide spend time really understand either Linq SQL EF ... neither want check n't great flaw technology would render research time useless E.g performance terrible 's cool simple apps take far Update concentrate EF VS L2S VS SPs rather ORM VS SPs 'm mainly interested EF VS L2S keen compare store procs since plain SQl something know lot
+12777435,Disable multi finger touch in my app,"<p>My app uses one Activity to host several fragments. Each time one fragment is shown on the phone screen.The view of each fragment consists of several image icons. </p>
+
+<p>Currently, user is able to press on two icons <strong>simultaneously</strong> with two fingers (with each fingure press on one icon). <strong>I want to disable this multi-touch feature</strong> on my app to allow <strong>only one icon press take effect at a time</strong>.</p>
+
+<p><strong>I tried the following ways:</strong></p>
+
+<p><strong>Way 1:</strong> in my app theme, I added:</p>
+
+<pre><code>&lt;item name=""android:windowEnableSplitTouch""&gt;false&lt;/item&gt;
+</code></pre>
+
+<p><strong>Way 2:</strong> In Android Manifest xml, I added:</p>
+
+<pre><code>&lt;uses-feature android:name=""android.hardware.touchscreen.multitouch"" android:required=""false"" /&gt;
+</code></pre>
+
+<p><strong>Way 3:</strong> in my Activity:</p>
+
+<pre><code>@Override
+public boolean onTouchEvent(MotionEvent event) {
+
+    if(event.getPointerCount() &gt; 1) {
+        System.out.println(""Multitouch detected!"");
+        return true;
+    }
+    else
+       return super.onTouchEvent(event);
+    }
+</code></pre>
+
+<p>Unfortunately, none of my solutions work. So, <strong>How can I disable multi-touch feature</strong> in my app??  </p>
+",<android><android-layout><android-intent><android-emulator><android-fragments>,22,28242,3,3,2012-10-08 07:50:36,"['android', 'android-layout', 'android-intent', 'android-emulator', 'android-fragments']","My app uses one Activity to host several fragments. Each time one fragment is shown on the phone screen.The view of each fragment consists of several image icons. 
+Currently, user is able to press on two icons simultaneously with two fingers (with each fingure press on one icon). I want to disable this multi-touch feature on my app to allow only one icon press take effect at a time.
+I tried the following ways:
+Way 1: in my app theme, I added:
+<item name=""android:windowEnableSplitTouch"">false</item>
+
+Way 2: In Android Manifest xml, I added:
+<uses-feature android:name=""android.hardware.touchscreen.multitouch"" android:required=""false"" />
+
+Way 3: in my Activity:
+@Override
+public boolean onTouchEvent(MotionEvent event) {
+
+    if(event.getPointerCount() > 1) {
+        System.out.println(""Multitouch detected!"");
+        return true;
+    }
+    else
+       return super.onTouchEvent(event);
+    }
+
+Unfortunately, none of my solutions work. So, How can I disable multi-touch feature in my app??  
+","['Disable', 'multi', 'finger', 'touch', 'in', 'my', 'app']","['My', 'app', 'uses', 'one', 'Activity', 'to', 'host', 'several', 'fragments', '.', 'Each', 'time', 'one', 'fragment', 'is', 'shown', 'on', 'the', 'phone', 'screen.The', 'view', 'of', 'each', 'fragment', 'consists', 'of', 'several', 'image', 'icons', '.', 'Currently', ',', 'user', 'is', 'able', 'to', 'press', 'on', 'two', 'icons', 'simultaneously', 'with', 'two', 'fingers', '(', 'with', 'each', 'fingure', 'press', 'on', 'one', 'icon', ')', '.', 'I', 'want', 'to', 'disable', 'this', 'multi-touch', 'feature', 'on', 'my', 'app', 'to', 'allow', 'only', 'one', 'icon', 'press', 'take', 'effect', 'at', 'a', 'time', '.', 'I', 'tried', 'the', 'following', 'ways', ':', 'Way', '1', ':', 'in', 'my', 'app', 'theme', ',', 'I', 'added', ':', '<', 'item', 'name=', ""''"", 'android', ':', 'windowEnableSplitTouch', ""''"", '>', 'false', '<', '/item', '>', 'Way', '2', ':', 'In', 'Android', 'Manifest', 'xml', ',', 'I', 'added', ':', '<', 'uses-feature', 'android', ':', 'name=', ""''"", 'android.hardware.touchscreen.multitouch', ""''"", 'android', ':', 'required=', ""''"", 'false', ""''"", '/', '>', 'Way', '3', ':', 'in', 'my', 'Activity', ':', '@', 'Override', 'public', 'boolean', 'onTouchEvent', '(', 'MotionEvent', 'event', ')', '{', 'if', '(', 'event.getPointerCount', '(', ')', '>', '1', ')', '{', 'System.out.println', '(', '``', 'Multitouch', 'detected', '!', '``', ')', ';', 'return', 'true', ';', '}', 'else', 'return', 'super.onTouchEvent', '(', 'event', ')', ';', '}', 'Unfortunately', ',', 'none', 'of', 'my', 'solutions', 'work', '.', 'So', ',', 'How', 'can', 'I', 'disable', 'multi-touch', 'feature', 'in', 'my', 'app', '?', '?']","['Disable', 'multi', 'finger', 'touch', 'app']","['app', 'uses', 'one', 'Activity', 'host', 'several', 'fragments', 'time', 'one', 'fragment', 'shown', 'phone', 'screen.The', 'view', 'fragment', 'consists', 'several', 'image', 'icons', 'Currently', 'user', 'able', 'press', 'two', 'icons', 'simultaneously', 'two', 'fingers', 'fingure', 'press', 'one', 'icon', 'want', 'disable', 'multi-touch', 'feature', 'app', 'allow', 'one', 'icon', 'press', 'take', 'effect', 'time', 'tried', 'following', 'ways', 'Way', '1', 'app', 'theme', 'added', 'item', 'name=', ""''"", 'android', 'windowEnableSplitTouch', ""''"", 'false', '/item', 'Way', '2', 'Android', 'Manifest', 'xml', 'added', 'uses-feature', 'android', 'name=', ""''"", 'android.hardware.touchscreen.multitouch', ""''"", 'android', 'required=', ""''"", 'false', ""''"", 'Way', '3', 'Activity', 'Override', 'public', 'boolean', 'onTouchEvent', 'MotionEvent', 'event', 'event.getPointerCount', '1', 'System.out.println', '``', 'Multitouch', 'detected', '``', 'return', 'true', 'else', 'return', 'super.onTouchEvent', 'event', 'Unfortunately', 'none', 'solutions', 'work', 'disable', 'multi-touch', 'feature', 'app']",Disable multi finger touch app,app us one Activity host several fragment time one fragment show phone screen.The view fragment consists several image icon Currently user able press two icon simultaneously two finger fingure press one icon want disable multi-touch feature app allow one icon press take effect time try follow way Way 1 app theme add item name= '' android windowEnableSplitTouch '' false /item Way 2 Android Manifest xml add uses-feature android name= '' android.hardware.touchscreen.multitouch '' android required= '' false '' Way 3 Activity Override public boolean onTouchEvent MotionEvent event event.getPointerCount 1 System.out.println `` Multitouch detect `` return true else return super.onTouchEvent event Unfortunately none solution work disable multi-touch feature app,"['android', 'android-layout', 'android-intent', 'android-emulator', 'android-fragments']",Disable multi finger touch app app us one Activity host several fragment time one fragment show phone screen.The view fragment consists several image icon Currently user able press two icon simultaneously two finger fingure press one icon want disable multi-touch feature app allow one icon press take effect time try follow way Way 1 app theme add item name= '' android windowEnableSplitTouch '' false /item Way 2 Android Manifest xml add uses-feature android name= '' android.hardware.touchscreen.multitouch '' android required= '' false '' Way 3 Activity Override public boolean onTouchEvent MotionEvent event event.getPointerCount 1 System.out.println `` Multitouch detect `` return true else return super.onTouchEvent event Unfortunately none solution work disable multi-touch feature app
+19386501,LINQ To Entities Include + Where Method,"<p>I have NxN table, imagine:</p>
+
+<p>User(id, ...)  &lt;- UserAddresses(id, userId, addressId, enabled, ...) ->  Addresses(id, ...)</p>
+
+<p>UserAddresses contains the FK to user and to address.
+For what I know, the Entity created by the Entity Framework User, contains a collection to UserAddresses. The Address contains a collection to UserAddresses, and a specific UserAddress contains one refenrece to User and to one Address.</p>
+
+<p>Now I want to make the next query by linq.
+For a specific user id, get only the userAddresses with enabled flag setted to true.
+For a specific user id, userAddresses can contain multiple entries but only one is setted for this specific user.</p>
+
+<p>The query I can do is:</p>
+
+<pre><code>context.User.Include( x =&gt; x.UserAddresses )
+            .Include( x =&gt; x.UserAddresses.Select(y =&gt; y.Address) )
+            .Single( x =&gt; x.id == USER_ID )
+</code></pre>
+
+<p>but what i really want is not to load all UserAddresses for that user... Only the one that contains enabled, setted to TRUE!</p>
+
+<p>Somebody can help me to do this query?</p>
+",<c#><.net><linq><entity-framework><include>,16,32041,2,3,2013-10-15 16:40:09,"['c#', '.net', 'linq', 'entity-framework', 'include']","I have NxN table, imagine:
+User(id, ...)  <- UserAddresses(id, userId, addressId, enabled, ...) ->  Addresses(id, ...)
+UserAddresses contains the FK to user and to address.
+For what I know, the Entity created by the Entity Framework User, contains a collection to UserAddresses. The Address contains a collection to UserAddresses, and a specific UserAddress contains one refenrece to User and to one Address.
+Now I want to make the next query by linq.
+For a specific user id, get only the userAddresses with enabled flag setted to true.
+For a specific user id, userAddresses can contain multiple entries but only one is setted for this specific user.
+The query I can do is:
+context.User.Include( x => x.UserAddresses )
+            .Include( x => x.UserAddresses.Select(y => y.Address) )
+            .Single( x => x.id == USER_ID )
+
+but what i really want is not to load all UserAddresses for that user... Only the one that contains enabled, setted to TRUE!
+Somebody can help me to do this query?
+","['LINQ', 'To', 'Entities', 'Include', '+', 'Where', 'Method']","['I', 'have', 'NxN', 'table', ',', 'imagine', ':', 'User', '(', 'id', ',', '...', ')', '<', '-', 'UserAddresses', '(', 'id', ',', 'userId', ',', 'addressId', ',', 'enabled', ',', '...', ')', '-', '>', 'Addresses', '(', 'id', ',', '...', ')', 'UserAddresses', 'contains', 'the', 'FK', 'to', 'user', 'and', 'to', 'address', '.', 'For', 'what', 'I', 'know', ',', 'the', 'Entity', 'created', 'by', 'the', 'Entity', 'Framework', 'User', ',', 'contains', 'a', 'collection', 'to', 'UserAddresses', '.', 'The', 'Address', 'contains', 'a', 'collection', 'to', 'UserAddresses', ',', 'and', 'a', 'specific', 'UserAddress', 'contains', 'one', 'refenrece', 'to', 'User', 'and', 'to', 'one', 'Address', '.', 'Now', 'I', 'want', 'to', 'make', 'the', 'next', 'query', 'by', 'linq', '.', 'For', 'a', 'specific', 'user', 'id', ',', 'get', 'only', 'the', 'userAddresses', 'with', 'enabled', 'flag', 'setted', 'to', 'true', '.', 'For', 'a', 'specific', 'user', 'id', ',', 'userAddresses', 'can', 'contain', 'multiple', 'entries', 'but', 'only', 'one', 'is', 'setted', 'for', 'this', 'specific', 'user', '.', 'The', 'query', 'I', 'can', 'do', 'is', ':', 'context.User.Include', '(', 'x', '=', '>', 'x.UserAddresses', ')', '.Include', '(', 'x', '=', '>', 'x.UserAddresses.Select', '(', 'y', '=', '>', 'y.Address', ')', ')', '.Single', '(', 'x', '=', '>', 'x.id', '==', 'USER_ID', ')', 'but', 'what', 'i', 'really', 'want', 'is', 'not', 'to', 'load', 'all', 'UserAddresses', 'for', 'that', 'user', '...', 'Only', 'the', 'one', 'that', 'contains', 'enabled', ',', 'setted', 'to', 'TRUE', '!', 'Somebody', 'can', 'help', 'me', 'to', 'do', 'this', 'query', '?']","['LINQ', 'Entities', 'Include', 'Method']","['NxN', 'table', 'imagine', 'User', 'id', '...', 'UserAddresses', 'id', 'userId', 'addressId', 'enabled', '...', 'Addresses', 'id', '...', 'UserAddresses', 'contains', 'FK', 'user', 'address', 'know', 'Entity', 'created', 'Entity', 'Framework', 'User', 'contains', 'collection', 'UserAddresses', 'Address', 'contains', 'collection', 'UserAddresses', 'specific', 'UserAddress', 'contains', 'one', 'refenrece', 'User', 'one', 'Address', 'want', 'make', 'next', 'query', 'linq', 'specific', 'user', 'id', 'get', 'userAddresses', 'enabled', 'flag', 'setted', 'true', 'specific', 'user', 'id', 'userAddresses', 'contain', 'multiple', 'entries', 'one', 'setted', 'specific', 'user', 'query', 'context.User.Include', 'x', 'x.UserAddresses', '.Include', 'x', 'x.UserAddresses.Select', 'y.Address', '.Single', 'x', 'x.id', '==', 'USER_ID', 'really', 'want', 'load', 'UserAddresses', 'user', '...', 'one', 'contains', 'enabled', 'setted', 'TRUE', 'Somebody', 'help', 'query']",LINQ Entities Include Method,NxN table imagine User id ... UserAddresses id userId addressId enable ... Addresses id ... UserAddresses contains FK user address know Entity create Entity Framework User contains collection UserAddresses Address contains collection UserAddresses specific UserAddress contains one refenrece User one Address want make next query linq specific user id get userAddresses enable flag setted true specific user id userAddresses contain multiple entry one setted specific user query context.User.Include x x.UserAddresses .Include x x.UserAddresses.Select y.Address .Single x x.id == USER_ID really want load UserAddresses user ... one contains enable setted TRUE Somebody help query,"['c#', '.net', 'linq', 'entity-framework', 'include']",LINQ Entities Include Method NxN table imagine User id ... UserAddresses id userId addressId enable ... Addresses id ... UserAddresses contains FK user address know Entity create Entity Framework User contains collection UserAddresses Address contains collection UserAddresses specific UserAddress contains one refenrece User one Address want make next query linq specific user id get userAddresses enable flag setted true specific user id userAddresses contain multiple entry one setted specific user query context.User.Include x x.UserAddresses .Include x x.UserAddresses.Select y.Address .Single x x.id == USER_ID really want load UserAddresses user ... one contains enable setted TRUE Somebody help query
+29750618,Lambda parameter conflicting with class field on accessing field in later scope,"<p>I've got a weak imagination when it comes to names, so I often find myself re-using identifiers in my code. This caused me to run into this specific problem.</p>
+
+<p>Here's some example code:</p>
+
+<pre><code>public delegate void TestDelegate(int test);
+
+public class Test
+{
+    private int test;
+
+    private void method(int aaa)
+    {
+        TestDelegate del = test =&gt; aaa++;
+
+        test++;
+    }
+
+    public static void Main()
+    {
+    }
+}
+</code></pre>
+
+<p>Here are the compilation errors (output by <a href=""http://ideone.com/bTrRMD"" rel=""nofollow"">ideone</a>):</p>
+
+<pre><code>prog.cs(11,3): error CS0135: `test' conflicts with a declaration in a child block
+prog.cs(9,22): (Location of the symbol related to previous error)
+Compilation failed: 1 error(s), 0 warnings
+</code></pre>
+
+<p>Line 11 contains <code>test++</code>, line 9 contains the lambda.</p>
+
+<p>Incidentally, Visual Studio 2013 gives a different error:</p>
+
+<pre><code>'test' conflicts with the declaration 'Namespace.Test.test'
+</code></pre>
+
+<p>The error occurs at the increment on line 11 only.</p>
+
+<p>The code compiles successfully if I comment out either line 9 (the lambda) or line 11 (the increment).</p>
+
+<p>This issue is a surprise to me - I was sure that lambda parameter names can conflict only with local method variable names (which is sort of confirmed by the code compiling when I comment out the increment). Also, how can the lambda parameter possibly affect the increment, which is right outside the lambda's scope?</p>
+
+<p>I can't get my head around this... What exactly did I do wrong? And what do the cryptic error messages mean in this case?</p>
+
+<p><strong>EDIT after all the great answers:</strong></p>
+
+<p>So I think I finally understood the rule that I broke. It is not well-worded in the C# spec (7.6.2.1, see Jon Skeet's answer for the quote). What it was <em>supposed</em> to mean is something like:</p>
+
+<p>You can <em>not</em> use the same identifier to refer to different things (entities) in the same ""local variable declaration space"" if <strong>one of the offending uses is (directly) located in a scope which can be ""seen"" from the scope where the other is (directly) located</strong>.</p>
+
+<p>Not the standard's standard phrasing, but I hope you understood what I mean. This rule was supposed to allow this:</p>
+
+<pre><code>{
+    int a;
+}
+
+{
+    int a;
+}
+</code></pre>
+
+<p>because neither of the scopes of the two variables <code>a</code> can be ""seen"" from the other's scope;</p>
+
+<p>and disallow this:</p>
+
+<pre><code>{
+    int a;
+}
+
+int a;
+</code></pre>
+
+<p>because the second variable declaration is ""seen"" from the first variable's scope</p>
+
+<p>and disallow this:</p>
+
+<pre><code>class Test
+{
+    int test;
+
+    void method()
+    {
+        {
+            int test;
+        }
+
+        test++;
+    }
+}
+</code></pre>
+
+<p>because the increment of the field can be ""seen"" from the block's scope (it not being a declaration doesn't matter).</p>
+
+<p>It seems that C#6 changed this rule, specifically making the last example (and my original code) legit, though I don't really understand how exactly.</p>
+
+<p>Please correct me if I made some mistakes in these examples.</p>
+",<c#><class><lambda><field><increment>,22,909,3,6,2015-04-20 14:26:29,"['c#', 'class', 'lambda', 'field', 'increment']","I've got a weak imagination when it comes to names, so I often find myself re-using identifiers in my code. This caused me to run into this specific problem.
+Here's some example code:
+public delegate void TestDelegate(int test);
+
+public class Test
+{
+    private int test;
+
+    private void method(int aaa)
+    {
+        TestDelegate del = test => aaa++;
+
+        test++;
+    }
+
+    public static void Main()
+    {
+    }
+}
+
+Here are the compilation errors (output by ideone):
+prog.cs(11,3): error CS0135: `test' conflicts with a declaration in a child block
+prog.cs(9,22): (Location of the symbol related to previous error)
+Compilation failed: 1 error(s), 0 warnings
+
+Line 11 contains test++, line 9 contains the lambda.
+Incidentally, Visual Studio 2013 gives a different error:
+'test' conflicts with the declaration 'Namespace.Test.test'
+
+The error occurs at the increment on line 11 only.
+The code compiles successfully if I comment out either line 9 (the lambda) or line 11 (the increment).
+This issue is a surprise to me - I was sure that lambda parameter names can conflict only with local method variable names (which is sort of confirmed by the code compiling when I comment out the increment). Also, how can the lambda parameter possibly affect the increment, which is right outside the lambda's scope?
+I can't get my head around this... What exactly did I do wrong? And what do the cryptic error messages mean in this case?
+EDIT after all the great answers:
+So I think I finally understood the rule that I broke. It is not well-worded in the C# spec (7.6.2.1, see Jon Skeet's answer for the quote). What it was supposed to mean is something like:
+You can not use the same identifier to refer to different things (entities) in the same ""local variable declaration space"" if one of the offending uses is (directly) located in a scope which can be ""seen"" from the scope where the other is (directly) located.
+Not the standard's standard phrasing, but I hope you understood what I mean. This rule was supposed to allow this:
+{
+    int a;
+}
+
+{
+    int a;
+}
+
+because neither of the scopes of the two variables a can be ""seen"" from the other's scope;
+and disallow this:
+{
+    int a;
+}
+
+int a;
+
+because the second variable declaration is ""seen"" from the first variable's scope
+and disallow this:
+class Test
+{
+    int test;
+
+    void method()
+    {
+        {
+            int test;
+        }
+
+        test++;
+    }
+}
+
+because the increment of the field can be ""seen"" from the block's scope (it not being a declaration doesn't matter).
+It seems that C#6 changed this rule, specifically making the last example (and my original code) legit, though I don't really understand how exactly.
+Please correct me if I made some mistakes in these examples.
+","['Lambda', 'parameter', 'conflicting', 'with', 'class', 'field', 'on', 'accessing', 'field', 'in', 'later', 'scope']","['I', ""'ve"", 'got', 'a', 'weak', 'imagination', 'when', 'it', 'comes', 'to', 'names', ',', 'so', 'I', 'often', 'find', 'myself', 're-using', 'identifiers', 'in', 'my', 'code', '.', 'This', 'caused', 'me', 'to', 'run', 'into', 'this', 'specific', 'problem', '.', 'Here', ""'s"", 'some', 'example', 'code', ':', 'public', 'delegate', 'void', 'TestDelegate', '(', 'int', 'test', ')', ';', 'public', 'class', 'Test', '{', 'private', 'int', 'test', ';', 'private', 'void', 'method', '(', 'int', 'aaa', ')', '{', 'TestDelegate', 'del', '=', 'test', '=', '>', 'aaa++', ';', 'test++', ';', '}', 'public', 'static', 'void', 'Main', '(', ')', '{', '}', '}', 'Here', 'are', 'the', 'compilation', 'errors', '(', 'output', 'by', 'ideone', ')', ':', 'prog.cs', '(', '11,3', ')', ':', 'error', 'CS0135', ':', '`', 'test', ""'"", 'conflicts', 'with', 'a', 'declaration', 'in', 'a', 'child', 'block', 'prog.cs', '(', '9,22', ')', ':', '(', 'Location', 'of', 'the', 'symbol', 'related', 'to', 'previous', 'error', ')', 'Compilation', 'failed', ':', '1', 'error', '(', 's', ')', ',', '0', 'warnings', 'Line', '11', 'contains', 'test++', ',', 'line', '9', 'contains', 'the', 'lambda', '.', 'Incidentally', ',', 'Visual', 'Studio', '2013', 'gives', 'a', 'different', 'error', ':', ""'test"", ""'"", 'conflicts', 'with', 'the', 'declaration', ""'Namespace.Test.test"", ""'"", 'The', 'error', 'occurs', 'at', 'the', 'increment', 'on', 'line', '11', 'only', '.', 'The', 'code', 'compiles', 'successfully', 'if', 'I', 'comment', 'out', 'either', 'line', '9', '(', 'the', 'lambda', ')', 'or', 'line', '11', '(', 'the', 'increment', ')', '.', 'This', 'issue', 'is', 'a', 'surprise', 'to', 'me', '-', 'I', 'was', 'sure', 'that', 'lambda', 'parameter', 'names', 'can', 'conflict', 'only', 'with', 'local', 'method', 'variable', 'names', '(', 'which', 'is', 'sort', 'of', 'confirmed', 'by', 'the', 'code', 'compiling', 'when', 'I', 'comment', 'out', 'the', 'increment', ')', '.', 'Also', ',', 'how', 'can', 'the', 'lambda', 'parameter', 'possibly', 'affect', 'the', 'increment', ',', 'which', 'is', 'right', 'outside', 'the', 'lambda', ""'s"", 'scope', '?', 'I', 'ca', ""n't"", 'get', 'my', 'head', 'around', 'this', '...', 'What', 'exactly', 'did', 'I', 'do', 'wrong', '?', 'And', 'what', 'do', 'the', 'cryptic', 'error', 'messages', 'mean', 'in', 'this', 'case', '?', 'EDIT', 'after', 'all', 'the', 'great', 'answers', ':', 'So', 'I', 'think', 'I', 'finally', 'understood', 'the', 'rule', 'that', 'I', 'broke', '.', 'It', 'is', 'not', 'well-worded', 'in', 'the', 'C', '#', 'spec', '(', '7.6.2.1', ',', 'see', 'Jon', 'Skeet', ""'s"", 'answer', 'for', 'the', 'quote', ')', '.', 'What', 'it', 'was', 'supposed', 'to', 'mean', 'is', 'something', 'like', ':', 'You', 'can', 'not', 'use', 'the', 'same', 'identifier', 'to', 'refer', 'to', 'different', 'things', '(', 'entities', ')', 'in', 'the', 'same', '``', 'local', 'variable', 'declaration', 'space', ""''"", 'if', 'one', 'of', 'the', 'offending', 'uses', 'is', '(', 'directly', ')', 'located', 'in', 'a', 'scope', 'which', 'can', 'be', '``', 'seen', ""''"", 'from', 'the', 'scope', 'where', 'the', 'other', 'is', '(', 'directly', ')', 'located', '.', 'Not', 'the', 'standard', ""'s"", 'standard', 'phrasing', ',', 'but', 'I', 'hope', 'you', 'understood', 'what', 'I', 'mean', '.', 'This', 'rule', 'was', 'supposed', 'to', 'allow', 'this', ':', '{', 'int', 'a', ';', '}', '{', 'int', 'a', ';', '}', 'because', 'neither', 'of', 'the', 'scopes', 'of', 'the', 'two', 'variables', 'a', 'can', 'be', '``', 'seen', ""''"", 'from', 'the', 'other', ""'s"", 'scope', ';', 'and', 'disallow', 'this', ':', '{', 'int', 'a', ';', '}', 'int', 'a', ';', 'because', 'the', 'second', 'variable', 'declaration', 'is', '``', 'seen', ""''"", 'from', 'the', 'first', 'variable', ""'s"", 'scope', 'and', 'disallow', 'this', ':', 'class', 'Test', '{', 'int', 'test', ';', 'void', 'method', '(', ')', '{', '{', 'int', 'test', ';', '}', 'test++', ';', '}', '}', 'because', 'the', 'increment', 'of', 'the', 'field', 'can', 'be', '``', 'seen', ""''"", 'from', 'the', 'block', ""'s"", 'scope', '(', 'it', 'not', 'being', 'a', 'declaration', 'does', ""n't"", 'matter', ')', '.', 'It', 'seems', 'that', 'C', '#', '6', 'changed', 'this', 'rule', ',', 'specifically', 'making', 'the', 'last', 'example', '(', 'and', 'my', 'original', 'code', ')', 'legit', ',', 'though', 'I', 'do', ""n't"", 'really', 'understand', 'how', 'exactly', '.', 'Please', 'correct', 'me', 'if', 'I', 'made', 'some', 'mistakes', 'in', 'these', 'examples', '.']","['Lambda', 'parameter', 'conflicting', 'class', 'field', 'accessing', 'field', 'later', 'scope']","[""'ve"", 'got', 'weak', 'imagination', 'comes', 'names', 'often', 'find', 're-using', 'identifiers', 'code', 'caused', 'run', 'specific', 'problem', ""'s"", 'example', 'code', 'public', 'delegate', 'void', 'TestDelegate', 'int', 'test', 'public', 'class', 'Test', 'private', 'int', 'test', 'private', 'void', 'method', 'int', 'aaa', 'TestDelegate', 'del', 'test', 'aaa++', 'test++', 'public', 'static', 'void', 'Main', 'compilation', 'errors', 'output', 'ideone', 'prog.cs', '11,3', 'error', 'CS0135', 'test', 'conflicts', 'declaration', 'child', 'block', 'prog.cs', '9,22', 'Location', 'symbol', 'related', 'previous', 'error', 'Compilation', 'failed', '1', 'error', '0', 'warnings', 'Line', '11', 'contains', 'test++', 'line', '9', 'contains', 'lambda', 'Incidentally', 'Visual', 'Studio', '2013', 'gives', 'different', 'error', ""'test"", 'conflicts', 'declaration', ""'Namespace.Test.test"", 'error', 'occurs', 'increment', 'line', '11', 'code', 'compiles', 'successfully', 'comment', 'either', 'line', '9', 'lambda', 'line', '11', 'increment', 'issue', 'surprise', 'sure', 'lambda', 'parameter', 'names', 'conflict', 'local', 'method', 'variable', 'names', 'sort', 'confirmed', 'code', 'compiling', 'comment', 'increment', 'Also', 'lambda', 'parameter', 'possibly', 'affect', 'increment', 'right', 'outside', 'lambda', ""'s"", 'scope', 'ca', ""n't"", 'get', 'head', 'around', '...', 'exactly', 'wrong', 'cryptic', 'error', 'messages', 'mean', 'case', 'EDIT', 'great', 'answers', 'think', 'finally', 'understood', 'rule', 'broke', 'well-worded', 'C', 'spec', '7.6.2.1', 'see', 'Jon', 'Skeet', ""'s"", 'answer', 'quote', 'supposed', 'mean', 'something', 'like', 'use', 'identifier', 'refer', 'different', 'things', 'entities', '``', 'local', 'variable', 'declaration', 'space', ""''"", 'one', 'offending', 'uses', 'directly', 'located', 'scope', '``', 'seen', ""''"", 'scope', 'directly', 'located', 'standard', ""'s"", 'standard', 'phrasing', 'hope', 'understood', 'mean', 'rule', 'supposed', 'allow', 'int', 'int', 'neither', 'scopes', 'two', 'variables', '``', 'seen', ""''"", ""'s"", 'scope', 'disallow', 'int', 'int', 'second', 'variable', 'declaration', '``', 'seen', ""''"", 'first', 'variable', ""'s"", 'scope', 'disallow', 'class', 'Test', 'int', 'test', 'void', 'method', 'int', 'test', 'test++', 'increment', 'field', '``', 'seen', ""''"", 'block', ""'s"", 'scope', 'declaration', ""n't"", 'matter', 'seems', 'C', '6', 'changed', 'rule', 'specifically', 'making', 'last', 'example', 'original', 'code', 'legit', 'though', ""n't"", 'really', 'understand', 'exactly', 'Please', 'correct', 'made', 'mistakes', 'examples']",Lambda parameter conflict class field access field later scope,"'ve get weak imagination come name often find re-using identifier code cause run specific problem 's example code public delegate void TestDelegate int test public class Test private int test private void method int aaa TestDelegate del test aaa++ test++ public static void Main compilation error output ideone prog.cs 11,3 error CS0135 test conflict declaration child block prog.cs 9,22 Location symbol related previous error Compilation fail 1 error 0 warning Line 11 contains test++ line 9 contains lambda Incidentally Visual Studio 2013 give different error 'test conflict declaration 'Namespace.Test.test error occurs increment line 11 code compiles successfully comment either line 9 lambda line 11 increment issue surprise sure lambda parameter name conflict local method variable name sort confirm code compile comment increment Also lambda parameter possibly affect increment right outside lambda 's scope ca n't get head around ... exactly wrong cryptic error message mean case EDIT great answer think finally understood rule broke well-worded C spec 7.6.2.1 see Jon Skeet 's answer quote suppose mean something like use identifier refer different thing entity `` local variable declaration space '' one offend us directly locate scope `` see '' scope directly locate standard 's standard phrasing hope understood mean rule suppose allow int int neither scope two variable `` see '' 's scope disallow int int second variable declaration `` see '' first variable 's scope disallow class Test int test void method int test test++ increment field `` see '' block 's scope declaration n't matter seem C 6 change rule specifically make last example original code legit though n't really understand exactly Please correct make mistake example","['c#', 'class', 'lambda', 'field', 'increment']","Lambda parameter conflict class field access field later scope 've get weak imagination come name often find re-using identifier code cause run specific problem 's example code public delegate void TestDelegate int test public class Test private int test private void method int aaa TestDelegate del test aaa++ test++ public static void Main compilation error output ideone prog.cs 11,3 error CS0135 test conflict declaration child block prog.cs 9,22 Location symbol related previous error Compilation fail 1 error 0 warning Line 11 contains test++ line 9 contains lambda Incidentally Visual Studio 2013 give different error 'test conflict declaration 'Namespace.Test.test error occurs increment line 11 code compiles successfully comment either line 9 lambda line 11 increment issue surprise sure lambda parameter name conflict local method variable name sort confirm code compile comment increment Also lambda parameter possibly affect increment right outside lambda 's scope ca n't get head around ... exactly wrong cryptic error message mean case EDIT great answer think finally understood rule broke well-worded C spec 7.6.2.1 see Jon Skeet 's answer quote suppose mean something like use identifier refer different thing entity `` local variable declaration space '' one offend us directly locate scope `` see '' scope directly locate standard 's standard phrasing hope understood mean rule suppose allow int int neither scope two variable `` see '' 's scope disallow int int second variable declaration `` see '' first variable 's scope disallow class Test int test void method int test test++ increment field `` see '' block 's scope declaration n't matter seem C 6 change rule specifically make last example original code legit though n't really understand exactly Please correct make mistake example"
+51624481,How to implement a generic service class in java Spring Boot?,"<p>I have many services that have repeated code and I want to know how to implement a generic service so all my services can extend it.</p>
+
+<p>Service interfaces example (<strong>Repeated code</strong>):</p>
+
+<pre><code>@Service
+public interface IUserService{    
+    List&lt;User&gt; findAll();
+    User save(User entity);
+    User findById(long id);
+    void delete(User entity);
+    void deleteById(long id);
+    long count();
+}
+</code></pre>
+
+<hr>
+
+<pre><code>@Service
+public interface IEventService{ 
+
+    List&lt;Event&gt; findAll();
+    Event save(Event entity);
+    Event findById(long id);
+    void delete(Event entity);
+    void deleteById(long id);
+    long count();
+}
+</code></pre>
+
+<p>And their implementations (<strong>Now, I have the same code in all the implementations</strong>):</p>
+
+<pre><code>@Service
+public class EventService implements IEventService{
+
+    @Autowired
+    private IEventDao dao;
+
+    @Override
+    public List&lt;Event&gt; findAll() {
+        return dao.findAll();
+    }
+
+    @Override
+    public Event save(Event entity) {
+        return dao.save(entity);
+    }
+
+   Other CRUD methods...
+
+}
+</code></pre>
+
+<hr>
+
+<pre><code>@Service
+    public class UserService implements IUserService{
+
+        @Autowired
+        private IUserDao dao;
+
+        @Override
+        public List&lt;User&gt; findAll() {
+            return dao.findAll();
+        }
+
+        @Override
+        public User save(User entity) {
+            return dao.save(entity);
+        }
+
+       Other CRUD methods...
+
+    }
+</code></pre>
+",<java><spring><spring-boot><spring-data-jpa><spring-data>,14,27233,1,7,2018-08-01 02:12:36,"['java', 'spring', 'spring-boot', 'spring-data-jpa', 'spring-data']","I have many services that have repeated code and I want to know how to implement a generic service so all my services can extend it.
+Service interfaces example (Repeated code):
+@Service
+public interface IUserService{    
+    List<User> findAll();
+    User save(User entity);
+    User findById(long id);
+    void delete(User entity);
+    void deleteById(long id);
+    long count();
+}
+
+
+@Service
+public interface IEventService{ 
+
+    List<Event> findAll();
+    Event save(Event entity);
+    Event findById(long id);
+    void delete(Event entity);
+    void deleteById(long id);
+    long count();
+}
+
+And their implementations (Now, I have the same code in all the implementations):
+@Service
+public class EventService implements IEventService{
+
+    @Autowired
+    private IEventDao dao;
+
+    @Override
+    public List<Event> findAll() {
+        return dao.findAll();
+    }
+
+    @Override
+    public Event save(Event entity) {
+        return dao.save(entity);
+    }
+
+   Other CRUD methods...
+
+}
+
+
+@Service
+    public class UserService implements IUserService{
+
+        @Autowired
+        private IUserDao dao;
+
+        @Override
+        public List<User> findAll() {
+            return dao.findAll();
+        }
+
+        @Override
+        public User save(User entity) {
+            return dao.save(entity);
+        }
+
+       Other CRUD methods...
+
+    }
+
+","['How', 'to', 'implement', 'a', 'generic', 'service', 'class', 'in', 'java', 'Spring', 'Boot', '?']","['I', 'have', 'many', 'services', 'that', 'have', 'repeated', 'code', 'and', 'I', 'want', 'to', 'know', 'how', 'to', 'implement', 'a', 'generic', 'service', 'so', 'all', 'my', 'services', 'can', 'extend', 'it', '.', 'Service', 'interfaces', 'example', '(', 'Repeated', 'code', ')', ':', '@', 'Service', 'public', 'interface', 'IUserService', '{', 'List', '<', 'User', '>', 'findAll', '(', ')', ';', 'User', 'save', '(', 'User', 'entity', ')', ';', 'User', 'findById', '(', 'long', 'id', ')', ';', 'void', 'delete', '(', 'User', 'entity', ')', ';', 'void', 'deleteById', '(', 'long', 'id', ')', ';', 'long', 'count', '(', ')', ';', '}', '@', 'Service', 'public', 'interface', 'IEventService', '{', 'List', '<', 'Event', '>', 'findAll', '(', ')', ';', 'Event', 'save', '(', 'Event', 'entity', ')', ';', 'Event', 'findById', '(', 'long', 'id', ')', ';', 'void', 'delete', '(', 'Event', 'entity', ')', ';', 'void', 'deleteById', '(', 'long', 'id', ')', ';', 'long', 'count', '(', ')', ';', '}', 'And', 'their', 'implementations', '(', 'Now', ',', 'I', 'have', 'the', 'same', 'code', 'in', 'all', 'the', 'implementations', ')', ':', '@', 'Service', 'public', 'class', 'EventService', 'implements', 'IEventService', '{', '@', 'Autowired', 'private', 'IEventDao', 'dao', ';', '@', 'Override', 'public', 'List', '<', 'Event', '>', 'findAll', '(', ')', '{', 'return', 'dao.findAll', '(', ')', ';', '}', '@', 'Override', 'public', 'Event', 'save', '(', 'Event', 'entity', ')', '{', 'return', 'dao.save', '(', 'entity', ')', ';', '}', 'Other', 'CRUD', 'methods', '...', '}', '@', 'Service', 'public', 'class', 'UserService', 'implements', 'IUserService', '{', '@', 'Autowired', 'private', 'IUserDao', 'dao', ';', '@', 'Override', 'public', 'List', '<', 'User', '>', 'findAll', '(', ')', '{', 'return', 'dao.findAll', '(', ')', ';', '}', '@', 'Override', 'public', 'User', 'save', '(', 'User', 'entity', ')', '{', 'return', 'dao.save', '(', 'entity', ')', ';', '}', 'Other', 'CRUD', 'methods', '...', '}']","['implement', 'generic', 'service', 'class', 'java', 'Spring', 'Boot']","['many', 'services', 'repeated', 'code', 'want', 'know', 'implement', 'generic', 'service', 'services', 'extend', 'Service', 'interfaces', 'example', 'Repeated', 'code', 'Service', 'public', 'interface', 'IUserService', 'List', 'User', 'findAll', 'User', 'save', 'User', 'entity', 'User', 'findById', 'long', 'id', 'void', 'delete', 'User', 'entity', 'void', 'deleteById', 'long', 'id', 'long', 'count', 'Service', 'public', 'interface', 'IEventService', 'List', 'Event', 'findAll', 'Event', 'save', 'Event', 'entity', 'Event', 'findById', 'long', 'id', 'void', 'delete', 'Event', 'entity', 'void', 'deleteById', 'long', 'id', 'long', 'count', 'implementations', 'code', 'implementations', 'Service', 'public', 'class', 'EventService', 'implements', 'IEventService', 'Autowired', 'private', 'IEventDao', 'dao', 'Override', 'public', 'List', 'Event', 'findAll', 'return', 'dao.findAll', 'Override', 'public', 'Event', 'save', 'Event', 'entity', 'return', 'dao.save', 'entity', 'CRUD', 'methods', '...', 'Service', 'public', 'class', 'UserService', 'implements', 'IUserService', 'Autowired', 'private', 'IUserDao', 'dao', 'Override', 'public', 'List', 'User', 'findAll', 'return', 'dao.findAll', 'Override', 'public', 'User', 'save', 'User', 'entity', 'return', 'dao.save', 'entity', 'CRUD', 'methods', '...']",implement generic service class java Spring Boot,many service repeat code want know implement generic service service extend Service interface example Repeated code Service public interface IUserService List User findAll User save User entity User findById long id void delete User entity void deleteById long id long count Service public interface IEventService List Event findAll Event save Event entity Event findById long id void delete Event entity void deleteById long id long count implementation code implementation Service public class EventService implement IEventService Autowired private IEventDao dao Override public List Event findAll return dao.findAll Override public Event save Event entity return dao.save entity CRUD method ... Service public class UserService implement IUserService Autowired private IUserDao dao Override public List User findAll return dao.findAll Override public User save User entity return dao.save entity CRUD method ...,"['java', 'spring', 'spring-boot', 'spring-data-jpa', 'spring-data']",implement generic service class java Spring Boot many service repeat code want know implement generic service service extend Service interface example Repeated code Service public interface IUserService List User findAll User save User entity User findById long id void delete User entity void deleteById long id long count Service public interface IEventService List Event findAll Event save Event entity Event findById long id void delete Event entity void deleteById long id long count implementation code implementation Service public class EventService implement IEventService Autowired private IEventDao dao Override public List Event findAll return dao.findAll Override public Event save Event entity return dao.save entity CRUD method ... Service public class UserService implement IUserService Autowired private IUserDao dao Override public List User findAll return dao.findAll Override public User save User entity return dao.save entity CRUD method ...

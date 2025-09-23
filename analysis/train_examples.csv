@@ -1,0 +1,88 @@
+Id,Title,Body,Tags,Score,ViewCount,AnswerCount,CommentCount,CreationDate,TagsArray,BodyClean,TitleTokens,BodyTokens,TitleNoStop,BodyNoStop,TitleLemmaPOS,BodyLemmaPOS,TagsList,TitleAndBodyLemmaPOS
+1109022,How can I close/hide the Android soft keyboard programmatically?,"<p>I have an <code>EditText</code> and a <code>Button</code> in my layout.</p>
+<p>After writing in the edit field and clicking on the <code>Button</code>, I want to hide the virtual keyboard when touching outside the keyboard. Can someone provide a simple example of how to achieve this?</p>
+",<android><android-edittext><android-softkeyboard><android-input-method><soft-keyboard>,4374,1872747,132,8,2009-07-10 11:27:17,"['android', 'android-edittext', 'android-softkeyboard', 'android-input-method', 'soft-keyboard']","I have an EditText and a Button in my layout.
+After writing in the edit field and clicking on the Button, I want to hide the virtual keyboard when touching outside the keyboard. Can someone provide a simple example of how to achieve this?
+","['How', 'can', 'I', 'close/hide', 'the', 'Android', 'soft', 'keyboard', 'programmatically', '?']","['I', 'have', 'an', 'EditText', 'and', 'a', 'Button', 'in', 'my', 'layout', '.', 'After', 'writing', 'in', 'the', 'edit', 'field', 'and', 'clicking', 'on', 'the', 'Button', ',', 'I', 'want', 'to', 'hide', 'the', 'virtual', 'keyboard', 'when', 'touching', 'outside', 'the', 'keyboard', '.', 'Can', 'someone', 'provide', 'a', 'simple', 'example', 'of', 'how', 'to', 'achieve', 'this', '?']","['close/hide', 'Android', 'soft', 'keyboard', 'programmatically']","['EditText', 'Button', 'layout', 'writing', 'edit', 'field', 'clicking', 'Button', 'want', 'hide', 'virtual', 'keyboard', 'touching', 'outside', 'keyboard', 'someone', 'provide', 'simple', 'example', 'achieve']",close/hide Android soft keyboard programmatically,EditText Button layout write edit field click Button want hide virtual keyboard touch outside keyboard someone provide simple example achieve,"['android', 'android-edittext', 'android-softkeyboard', 'android-input-method', 'soft-keyboard']",close/hide Android soft keyboard programmatically EditText Button layout write edit field click Button want hide virtual keyboard touch outside keyboard someone provide simple example achieve
+2155930,"How do I remedy ""The breakpoint will not currently be hit. No symbols have been loaded for this document."" warning?","<p>A C# desktop application (on the Visual Studio Express edition) worked, but then it didn't work 5 seconds later.</p>
+<p>I tried the following:</p>
+<ul>
+<li>Ensure debug configuration, debug flag, and full debug information are set on all assemblies.</li>
+<li>Delete all bin and obj folders and all DLL files related to the project from my entire machine.</li>
+<li>Recreate projects causing the problem from scratch.</li>
+<li>Reboot.</li>
+</ul>
+<p>I have two Windows Forms projects in the solution. One of them loads the debug information, one doesn't. They both refer to the assembly I'm trying to get debug information on in exactly the same way in the project file. Any ideas?</p>
+<hr />
+<p>I want to add here, mostly for myself when I come back to review this question, that symbols are not loaded until the assembly is loaded, and the assembly is not loaded until it is needed. If the breakpoint is in a library that is only used in one function in your main assembly, the symbols will not be loaded (and it will show the breakpoint as not being hit) until that function is called.</p>
+",<c#><.net><debugging><breakpoints><visual-studio-express>,2133,1880313,116,6,2010-01-28 16:09:10,"['c#', '.net', 'debugging', 'breakpoints', 'visual-studio-express']","A C# desktop application (on the Visual Studio Express edition) worked, but then it didn't work 5 seconds later.
+I tried the following:
+
+Ensure debug configuration, debug flag, and full debug information are set on all assemblies.
+Delete all bin and obj folders and all DLL files related to the project from my entire machine.
+Recreate projects causing the problem from scratch.
+Reboot.
+
+I have two Windows Forms projects in the solution. One of them loads the debug information, one doesn't. They both refer to the assembly I'm trying to get debug information on in exactly the same way in the project file. Any ideas?
+
+I want to add here, mostly for myself when I come back to review this question, that symbols are not loaded until the assembly is loaded, and the assembly is not loaded until it is needed. If the breakpoint is in a library that is only used in one function in your main assembly, the symbols will not be loaded (and it will show the breakpoint as not being hit) until that function is called.
+","['How', 'do', 'I', 'remedy', '``', 'The', 'breakpoint', 'will', 'not', 'currently', 'be', 'hit', '.', 'No', 'symbols', 'have', 'been', 'loaded', 'for', 'this', 'document', '.', ""''"", 'warning', '?']","['A', 'C', '#', 'desktop', 'application', '(', 'on', 'the', 'Visual', 'Studio', 'Express', 'edition', ')', 'worked', ',', 'but', 'then', 'it', 'did', ""n't"", 'work', '5', 'seconds', 'later', '.', 'I', 'tried', 'the', 'following', ':', 'Ensure', 'debug', 'configuration', ',', 'debug', 'flag', ',', 'and', 'full', 'debug', 'information', 'are', 'set', 'on', 'all', 'assemblies', '.', 'Delete', 'all', 'bin', 'and', 'obj', 'folders', 'and', 'all', 'DLL', 'files', 'related', 'to', 'the', 'project', 'from', 'my', 'entire', 'machine', '.', 'Recreate', 'projects', 'causing', 'the', 'problem', 'from', 'scratch', '.', 'Reboot', '.', 'I', 'have', 'two', 'Windows', 'Forms', 'projects', 'in', 'the', 'solution', '.', 'One', 'of', 'them', 'loads', 'the', 'debug', 'information', ',', 'one', 'does', ""n't"", '.', 'They', 'both', 'refer', 'to', 'the', 'assembly', 'I', ""'m"", 'trying', 'to', 'get', 'debug', 'information', 'on', 'in', 'exactly', 'the', 'same', 'way', 'in', 'the', 'project', 'file', '.', 'Any', 'ideas', '?', 'I', 'want', 'to', 'add', 'here', ',', 'mostly', 'for', 'myself', 'when', 'I', 'come', 'back', 'to', 'review', 'this', 'question', ',', 'that', 'symbols', 'are', 'not', 'loaded', 'until', 'the', 'assembly', 'is', 'loaded', ',', 'and', 'the', 'assembly', 'is', 'not', 'loaded', 'until', 'it', 'is', 'needed', '.', 'If', 'the', 'breakpoint', 'is', 'in', 'a', 'library', 'that', 'is', 'only', 'used', 'in', 'one', 'function', 'in', 'your', 'main', 'assembly', ',', 'the', 'symbols', 'will', 'not', 'be', 'loaded', '(', 'and', 'it', 'will', 'show', 'the', 'breakpoint', 'as', 'not', 'being', 'hit', ')', 'until', 'that', 'function', 'is', 'called', '.']","['remedy', '``', 'breakpoint', 'currently', 'hit', 'symbols', 'loaded', 'document', ""''"", 'warning']","['C', 'desktop', 'application', 'Visual', 'Studio', 'Express', 'edition', 'worked', ""n't"", 'work', '5', 'seconds', 'later', 'tried', 'following', 'Ensure', 'debug', 'configuration', 'debug', 'flag', 'full', 'debug', 'information', 'set', 'assemblies', 'Delete', 'bin', 'obj', 'folders', 'DLL', 'files', 'related', 'project', 'entire', 'machine', 'Recreate', 'projects', 'causing', 'problem', 'scratch', 'Reboot', 'two', 'Windows', 'Forms', 'projects', 'solution', 'One', 'loads', 'debug', 'information', 'one', ""n't"", 'refer', 'assembly', ""'m"", 'trying', 'get', 'debug', 'information', 'exactly', 'way', 'project', 'file', 'ideas', 'want', 'add', 'mostly', 'come', 'back', 'review', 'question', 'symbols', 'loaded', 'assembly', 'loaded', 'assembly', 'loaded', 'needed', 'breakpoint', 'library', 'used', 'one', 'function', 'main', 'assembly', 'symbols', 'loaded', 'show', 'breakpoint', 'hit', 'function', 'called']",remedy `` breakpoint currently hit symbol load document '' warn,C desktop application Visual Studio Express edition work n't work 5 second later try follow Ensure debug configuration debug flag full debug information set assembly Delete bin obj folder DLL file related project entire machine Recreate project cause problem scratch Reboot two Windows Forms project solution One load debug information one n't refer assembly 'm try get debug information exactly way project file idea want add mostly come back review question symbol load assembly load assembly load need breakpoint library use one function main assembly symbol load show breakpoint hit function call,"['c#', '.net', 'debugging', 'breakpoints', 'visual-studio-express']",remedy `` breakpoint currently hit symbol load document '' warn C desktop application Visual Studio Express edition work n't work 5 second later try follow Ensure debug configuration debug flag full debug information set assembly Delete bin obj folder DLL file related project entire machine Recreate project cause problem scratch Reboot two Windows Forms project solution One load debug information one n't refer assembly 'm try get debug information exactly way project file idea want add mostly come back review question symbol load assembly load assembly load need breakpoint library use one function main assembly symbol load show breakpoint hit function call
+885009,R cannot be resolved - Android error,"<p>I just downloaded and installed the new Android SDK. I wanted to create a simple application to test drive it.</p>
+
+<p>The wizard created this code:</p>
+
+<pre><code>package eu.mauriziopz.gps;
+
+import android.app.Activity;
+import android.os.Bundle;
+
+public class ggps extends Activity {
+    /** Called when the activity is first created. */
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.main);
+    }
+}
+</code></pre>
+
+<p>but <a href=""http://en.wikipedia.org/wiki/Eclipse_%28software%29"" rel=""noreferrer"">Eclipse</a> gives me the error</p>
+
+<blockquote>
+  <p>R cannot be resolved</p>
+</blockquote>
+
+<p>on line</p>
+
+<pre><code>setContentView(R.layout.main);
+</code></pre>
+
+<p>Why?</p>
+
+<p>PS: I do have an XML file named <code>main.xml</code> under <code>res/layout/</code>.</p>
+",<android><eclipse><compiler-errors><android-resources><android-sdk-tools>,1132,906073,108,5,2009-05-19 21:02:20,"['android', 'eclipse', 'compiler-errors', 'android-resources', 'android-sdk-tools']","I just downloaded and installed the new Android SDK. I wanted to create a simple application to test drive it.
+The wizard created this code:
+package eu.mauriziopz.gps;
+
+import android.app.Activity;
+import android.os.Bundle;
+
+public class ggps extends Activity {
+    /** Called when the activity is first created. */
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.main);
+    }
+}
+
+but Eclipse gives me the error
+
+R cannot be resolved
+
+on line
+setContentView(R.layout.main);
+
+Why?
+PS: I do have an XML file named main.xml under res/layout/.
+","['R', 'can', 'not', 'be', 'resolved', '-', 'Android', 'error']","['I', 'just', 'downloaded', 'and', 'installed', 'the', 'new', 'Android', 'SDK', '.', 'I', 'wanted', 'to', 'create', 'a', 'simple', 'application', 'to', 'test', 'drive', 'it', '.', 'The', 'wizard', 'created', 'this', 'code', ':', 'package', 'eu.mauriziopz.gps', ';', 'import', 'android.app.Activity', ';', 'import', 'android.os.Bundle', ';', 'public', 'class', 'ggps', 'extends', 'Activity', '{', '/', '*', '*', 'Called', 'when', 'the', 'activity', 'is', 'first', 'created', '.', '*', '/', '@', 'Override', 'public', 'void', 'onCreate', '(', 'Bundle', 'savedInstanceState', ')', '{', 'super.onCreate', '(', 'savedInstanceState', ')', ';', 'setContentView', '(', 'R.layout.main', ')', ';', '}', '}', 'but', 'Eclipse', 'gives', 'me', 'the', 'error', 'R', 'can', 'not', 'be', 'resolved', 'on', 'line', 'setContentView', '(', 'R.layout.main', ')', ';', 'Why', '?', 'PS', ':', 'I', 'do', 'have', 'an', 'XML', 'file', 'named', 'main.xml', 'under', 'res/layout/', '.']","['R', 'resolved', 'Android', 'error']","['downloaded', 'installed', 'new', 'Android', 'SDK', 'wanted', 'create', 'simple', 'application', 'test', 'drive', 'wizard', 'created', 'code', 'package', 'eu.mauriziopz.gps', 'import', 'android.app.Activity', 'import', 'android.os.Bundle', 'public', 'class', 'ggps', 'extends', 'Activity', 'Called', 'activity', 'first', 'created', 'Override', 'public', 'void', 'onCreate', 'Bundle', 'savedInstanceState', 'super.onCreate', 'savedInstanceState', 'setContentView', 'R.layout.main', 'Eclipse', 'gives', 'error', 'R', 'resolved', 'line', 'setContentView', 'R.layout.main', 'PS', 'XML', 'file', 'named', 'main.xml', 'res/layout/']",R resolve Android error,download instal new Android SDK want create simple application test drive wizard create code package eu.mauriziopz.gps import android.app.Activity import android.os.Bundle public class ggps extends Activity Called activity first create Override public void onCreate Bundle savedInstanceState super.onCreate savedInstanceState setContentView R.layout.main Eclipse give error R resolve line setContentView R.layout.main PS XML file name main.xml res/layout/,"['android', 'eclipse', 'compiler-errors', 'android-resources', 'android-sdk-tools']",R resolve Android error download instal new Android SDK want create simple application test drive wizard create code package eu.mauriziopz.gps import android.app.Activity import android.os.Bundle public class ggps extends Activity Called activity first create Override public void onCreate Bundle savedInstanceState super.onCreate savedInstanceState setContentView R.layout.main Eclipse give error R resolve line setContentView R.layout.main PS XML file name main.xml res/layout/

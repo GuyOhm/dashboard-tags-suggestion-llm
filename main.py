@@ -242,16 +242,38 @@ def render_tag_prediction():
             st.error("❌ OpenAI API key not found. Please set the OPENAI_API_KEY environment variable.")
             return
         
+        # Prepare lightweight artifacts once (saved under data/)
+        from pathlib import Path
+        if 'data_loader' not in st.session_state or st.session_state.data_loader is None:
+            st.session_state.data_loader = DataLoader()
+        _dl = st.session_state.data_loader
+        
+        if not Path("analysis/train_examples.csv").exists():
+            with st.spinner("Preparing train examples..."):
+                try:
+                    _dl.compute_and_save_train_examples(k=3)
+                    st.success("Train examples prepared")
+                except Exception as e:
+                    st.warning(f"Could not prepare train examples: {e}")
+        if not Path("analysis/test_samples.csv").exists():
+            with st.spinner("Preparing test samples..."):
+                try:
+                    _dl.load_or_create_test_samples(n=10)
+                    st.success("Test samples prepared")
+                except Exception as e:
+                    st.warning(f"Could not prepare test samples: {e}")
+        
         # Input area for testing
         st.subheader("📝 Prediction test")
         
         # Load test question samples
         @st.cache_data
         def load_test_samples():
-            test_df = pd.read_csv("data/test.csv")
-            # Take 10 varied questions (not necessarily the first ones)
-            sample_questions = test_df.sample(n=10, random_state=42).reset_index(drop=True)
-            return sample_questions
+            try:
+                return pd.read_csv("analysis/test_samples.csv")
+            except Exception:
+                # Fallback: compute now
+                return _dl.load_or_create_test_samples(n=10)
         
         test_samples = load_test_samples()
         
@@ -305,13 +327,13 @@ def render_tag_prediction():
                     with st.spinner("Prediction in progress..."):
                         # Load training data for examples
                         @st.cache_data
-                        def load_train_examples():
-                            train_df = pd.read_csv("data/train.csv")
-                            # Select the 3 questions with most answers
-                            examples = train_df.sort_values("AnswerCount", ascending=False).head(3)
-                            return examples
-                        
-                        train_examples = load_train_examples()
+                        def load_train_examples_cached():
+                            try:
+                                return pd.read_csv("analysis/train_examples.csv")
+                            except Exception:
+                                # Fallback: compute quickly
+                                return _dl.compute_and_save_train_examples(k=3)
+                        train_examples = load_train_examples_cached()
                         
                         # Create DataFrame for test
                         test_df = pd.DataFrame({

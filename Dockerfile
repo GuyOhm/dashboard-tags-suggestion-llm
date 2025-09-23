@@ -36,14 +36,8 @@ COPY --chown=appuser:appuser src/ ./src/
 COPY --chown=appuser:appuser main.py ./
 COPY --chown=appuser:appuser .env.example ./
 
-# Copy precomputed analysis JSON (if any)
+# Copy precomputed analysis JSON and samples df (if any)
 COPY --chown=appuser:appuser analysis/ ./analysis/
-
-# Copy data directory if it exists
-COPY --chown=appuser:appuser data/ ./data/
-
-# Create analysis directory and set permissions
-RUN mkdir -p analysis && chown -R appuser:appuser analysis
 
 # Switch back to non-root user
 USER appuser

@@ -7,6 +7,9 @@ from pathlib import Path
 from typing import List, Dict, Optional, Tuple, Union
 from datetime import datetime
 import warnings
+import os
+import gc
+import random
 warnings.filterwarnings('ignore')
 
 class DataLoader:
@@ -438,3 +441,100 @@ class DataLoader:
         print(f"✅ New analysis generated and saved: {saved_file}")
         
         return analysis_data
+
+    # ===== Memory-light helpers =====
+    def compute_and_save_train_examples(self, k: int = 3) -> pd.DataFrame:
+        """Compute top-k training examples by AnswerCount using chunked reads, save to analysis/train_examples.csv."""
+        out_file = self.analysis_dir / "train_examples.csv"
+        # If already exists, load and return
+        if out_file.exists():
+            try:
+                return pd.read_csv(out_file)
+            except Exception:
+                pass
+        
+        topk = pd.DataFrame()
+        try:
+            for chunk in pd.read_csv(self.train_path, chunksize=50000):
+                if 'AnswerCount' not in chunk.columns:
+                    # Fallback: if missing, just take first k rows
+                    cand = chunk.head(k).copy()
+                else:
+                    cand = chunk.nlargest(k, 'AnswerCount', keep='all')
+                topk = pd.concat([topk, cand], ignore_index=True)
+                if 'AnswerCount' in topk.columns:
+                    topk = topk.nlargest(k, 'AnswerCount', keep='all')
+                else:
+                    topk = topk.head(k)
+        except Exception:
+            # If reading in chunks fails, fallback to small read
+            try:
+                df = pd.read_csv(self.train_path, nrows=max(10000, k))
+                if 'AnswerCount' in df.columns:
+                    topk = df.nlargest(k, 'AnswerCount', keep='all')
+                else:
+                    topk = df.head(k)
+            except Exception:
+                topk = pd.DataFrame()
+        
+        try:
+            if not topk.empty:
+                topk.to_csv(out_file, index=False)
+        except Exception:
+            pass
+        
+        return topk.reset_index(drop=True)
+
+    def load_or_create_test_samples(self, n: int = 10) -> pd.DataFrame:
+        """Reservoir-sample up to n rows from test.csv using chunked reads; save to analysis/test_samples.csv."""
+        out_file = self.analysis_dir / "test_samples.csv"
+        if out_file.exists():
+            try:
+                return pd.read_csv(out_file)
+            except Exception:
+                pass
+        
+        reservoir = None
+        count = 0
+        try:
+            for chunk in pd.read_csv(self.test_path, chunksize=5000):
+                if reservoir is None:
+                    take = min(n, len(chunk))
+                    reservoir = chunk.head(take).copy().reset_index(drop=True)
+                    count = take
+                    rows_iter = chunk.iloc[take:]
+                else:
+                    rows_iter = chunk
+                # Classic reservoir sampling
+                for _, row in rows_iter.iterrows():
+                    count += 1
+                    if count <= n:
+                        reservoir.loc[count - 1] = row
+                    else:
+                        j = random.randint(1, count)
+                        if j <= n:
+                            reservoir.loc[j - 1] = row
+        except Exception:
+            # Fallback: try small read only
+            try:
+                df = pd.read_csv(self.test_path, nrows=max(10000, n))
+                reservoir = df.sample(n=min(n, len(df)), random_state=42).reset_index(drop=True)
+            except Exception:
+                reservoir = pd.DataFrame()
+        
+        if reservoir is None:
+            reservoir = pd.DataFrame()
+        
+        try:
+            reservoir.to_csv(out_file, index=False)
+        except Exception:
+            pass
+        
+        return reservoir
+
+    def release_memory(self) -> None:
+        """Drop large in-memory DataFrames and collect garbage."""
+        self.train_data = None
+        self.test_data = None
+        self.combined_data = None
+        gc.collect()
