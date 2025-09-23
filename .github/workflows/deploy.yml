@@ -16,16 +16,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-        with:
-          lfs: true
-          fetch-depth: 0
-          
-      - name: Ensure LFS files present
-        run: |
-          git lfs install
-          git lfs checkout
-          ls -lh data || true
-          head -n 1 data/test.csv || true
 
       - name: Configure AWS
         uses: aws-actions/configure-aws-credentials@v4
