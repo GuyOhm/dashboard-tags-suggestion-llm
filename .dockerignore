@@ -28,10 +28,6 @@ env/
 .DS_Store
 Thumbs.db
 
-# Analysis outputs (can be regenerated)
-analysis/*
-!analysis/*.json
-
 # Documentation
 *.md
 !README.md

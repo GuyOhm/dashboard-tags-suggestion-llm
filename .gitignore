@@ -44,10 +44,6 @@ venv.bak/
 # data/*.jsonl
 # data/*.parquet
 
-# Analysis results
-analysis/*.pkl
-analysis/*.txt
-
 # Modèles et artifacts
 models/
 artifacts/

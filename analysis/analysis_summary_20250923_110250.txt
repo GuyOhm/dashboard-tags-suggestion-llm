@@ -1,0 +1,39 @@
+Analyse Exploratoire StackOverflow - 20250923_110250
+==================================================
+
+Dataset:
+  - Total questions: 50,000
+  - Échantillon: 50000
+  - Distribution sources: {'train': 40000, 'test': 10000}
+
+Statistiques textuelles:
+  - Mots moyens titre: 9.0
+  - Mots moyens corps: 190.6
+
+Tags:
+  - Tags uniques: 17,302
+  - Tags par question (moyenne): 5.0
+
+Top 10 mots titres:
+  - using: 3545
+  - error: 2022
+  - use: 1934
+  - android: 1885
+  - file: 1850
+  - java: 1723
+  - python: 1714
+  - net: 1522
+  - vs: 1428
+  - get: 1375
+
+Top 10 tags:
+  - c#: 5878
+  - java: 5799
+  - javascript: 5327
+  - python: 5165
+  - c++: 4703
+  - android: 3583
+  - ios: 3523
+  - .net: 2890
+  - html: 2217
+  - c: 1901
